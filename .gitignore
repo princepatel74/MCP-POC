@@ -1,0 +1,25 @@
+# build output
+dist/
+.output/
+.astro
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+mcp-stderr.txt
+
+
+# environment variables
+.env
+.env.production
+
+# MCP demo request logs (may contain PII)
+mcp/data/demo-requests/
+
+# macOS-specific files
+.DS_Store

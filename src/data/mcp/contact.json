@@ -1,0 +1,21 @@
+{
+  "email": "sales@satvasolutions.com",
+  "phone": "+1 415 802 0027",
+  "address": {
+    "street": "1401 21st ST #10677",
+    "city": "Sacramento",
+    "state": "California",
+    "postalCode": "95811",
+    "country": "USA",
+    "formatted": "1401 21st ST #10677, Sacramento, California 95811"
+  },
+  "social": {
+    "website": "https://satvasolutions.com",
+    "linkedin": "https://www.linkedin.com/company/satva-solutions"
+  },
+  "businessHours": {
+    "weekdays": "Monday – Friday, 9:00 AM – 6:00 PM PST",
+    "weekends": "Closed",
+    "timezone": "America/Los_Angeles"
+  }
+}

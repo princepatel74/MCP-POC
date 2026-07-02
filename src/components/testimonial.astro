@@ -1,0 +1,16 @@
+---
+import { testimonial } from "@/data/site";
+---
+
+<div class="mt-24 rounded-2xl bg-brand-900 text-white p-10 md:p-16">
+  <p class="text-brand-200 text-sm font-semibold uppercase tracking-wider mb-6">
+    A client's point of view
+  </p>
+  <blockquote class="text-xl md:text-2xl leading-relaxed font-light">
+    "{testimonial.quote}"
+  </blockquote>
+  <footer class="mt-8">
+    <p class="font-semibold">{testimonial.author}</p>
+    <p class="text-brand-200 text-sm mt-1">{testimonial.role}</p>
+  </footer>
+</div>

@@ -1,0 +1,36 @@
+---
+import { features } from "@/data/solutions";
+import { company } from "@/data/site";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="mt-20 md:mt-28">
+  <div class="text-center max-w-3xl mx-auto">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-brand-900">
+      Our Solutions
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      {company.experience} of experience in accounting integration, ERP software,
+      API integrations, and fintech app development — helping businesses automate
+      processes and connect their systems.
+    </p>
+  </div>
+</div>
+
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 mt-16 gap-10">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start p-6 rounded-xl border border-slate-100 hover:border-brand-200 hover:shadow-md transition">
+        <div class="mt-1 bg-brand-800 rounded-lg p-2.5 w-10 h-10 shrink-0">
+          <Icon class="text-white w-5 h-5" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-brand-900">{item.title}</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed text-sm">
+            {item.description}
+          </p>
+        </div>
+      </div>
+    ))
+  }
+</div>

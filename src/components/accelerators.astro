@@ -1,0 +1,40 @@
+---
+import { accelerators } from "@/data/site";
+import Link from "@/components/ui/link.astro";
+---
+
+<div class="mt-24">
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <h2 class="text-4xl font-bold text-brand-900">
+      Live automations you can demo today
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      An accelerator is a production-tested automation Satva can demo on your
+      data today and deploy in days, not months.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 gap-6">
+    {
+      accelerators.map((item) => (
+        <a
+          href={item.href}
+          class="group block p-6 rounded-xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition bg-white">
+          <h3 class="text-xl font-semibold text-brand-900 group-hover:text-brand-700">
+            {item.title}
+          </h3>
+          <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+            {item.description}
+          </p>
+          <span class="inline-block mt-4 text-sm font-medium text-brand-700">
+            See how it works →
+          </span>
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="text-center mt-10">
+    <Link href="/solutions" style="outline">See all accelerators</Link>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": "system-integration",
+      "name": "System Integration",
+      "description": "API integration, B2B integration, and accounting integration across QuickBooks, HubSpot, Stripe, and NetSuite.",
+      "icon": "bx:bx-link-alt"
+    },
+    {
+      "id": "business-automation",
+      "name": "Business Automation",
+      "description": "Automate repetitive tasks with RPA and streamline financial workflows across your business systems.",
+      "icon": "bx:bx-bot"
+    },
+    {
+      "id": "financial-reporting",
+      "name": "Financial Reporting & Dashboards",
+      "description": "CXO dashboards with real-time business performance data from accounting, ERP, CRM, and eCommerce.",
+      "icon": "bx:bx-bar-chart-alt-2"
+    },
+    {
+      "id": "accounting-integration",
+      "name": "Multiple Accounting Integration",
+      "description": "Integrate with QuickBooks, Xero, Zoho Books, and more with real-time bi-directional sync.",
+      "icon": "bx:bx-calculator"
+    },
+    {
+      "id": "erp-integration",
+      "name": "Multiple ERP Integration",
+      "description": "Connect to SAP, NetSuite, Sage, and Dynamics 365 with ready-to-deploy cloud integrations.",
+      "icon": "bx:bx-server"
+    },
+    {
+      "id": "fintech-solutions",
+      "name": "FinTech Solutions",
+      "description": "Purchasing, accounting, payroll, budgeting, and MIS dashboards for finance teams.",
+      "icon": "bx:bx-wallet"
+    }
+  ]
+}

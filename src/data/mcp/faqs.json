@@ -1,0 +1,40 @@
+{
+  "faqs": [
+    {
+      "id": "specialization",
+      "question": "What does Satva Solutions specialize in?",
+      "answer": "Satva Solutions specializes in accounting integrations, ERP integrations, finance automation, SaaS product development, reporting dashboards, and custom business system integrations.",
+      "category": "General"
+    },
+    {
+      "id": "platforms",
+      "question": "Which accounting and ERP systems can Satva Solutions integrate?",
+      "answer": "QuickBooks, Xero, MYOB, FreshBooks, Zoho Books, SAP, Oracle NetSuite, Sage, Microsoft Dynamics 365 Business Central, Odoo, and Acumatica.",
+      "category": "Integrations"
+    },
+    {
+      "id": "saas-integrations",
+      "question": "Can Satva Solutions help SaaS companies build accounting integrations?",
+      "answer": "Yes. We help SaaS companies build accounting and ERP integrations including API integration, authentication, data mapping, bi-directional sync, and marketplace launch support.",
+      "category": "SaaS"
+    },
+    {
+      "id": "automation",
+      "question": "What business processes can Satva Solutions automate?",
+      "answer": "Invoice processing, AP, AR, bank reconciliation, order sync, inventory updates, payment matching, payroll journal posting, and financial reporting.",
+      "category": "Automation"
+    },
+    {
+      "id": "dashboards",
+      "question": "Does Satva Solutions build financial reporting dashboards?",
+      "answer": "Yes. Dashboards connecting accounting, ERP, CRM, payroll, eCommerce, and inventory systems with cash flow, revenue, and KPI views.",
+      "category": "Reporting"
+    },
+    {
+      "id": "staff-augmentation",
+      "question": "Does Satva Solutions offer IT staff augmentation?",
+      "answer": "Yes. Developers, integration specialists, QA engineers, AI/ML engineers, and product engineers with finance-domain expertise.",
+      "category": "Services"
+    }
+  ]
+}

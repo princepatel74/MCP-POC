@@ -1,0 +1,61 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import Cta from "@/components/cta.astro";
+import { integrationCategories } from "@/data/integrations";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout
+  title="Integration Services"
+  description="Accounting, ERP, eCommerce, and CRM integration services for QuickBooks, Xero, NetSuite, SAP, Shopify, Salesforce, and more.">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Integration Services</Fragment>
+      <Fragment slot="desc">
+        Connect your business systems with certified expertise across 50+
+        accounting, ERP, eCommerce, and CRM platforms.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-16">
+      {
+        integrationCategories.map((cat) => (
+          <div class="p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 rounded-lg bg-brand-100">
+                <Icon class="w-6 h-6 text-brand-700" name="bx:bx-plug" />
+              </div>
+              <h2 class="text-xl font-bold text-brand-900">{cat.title}</h2>
+            </div>
+            <ul class="grid grid-cols-2 gap-2">
+              {cat.platforms.map((platform) => (
+                <li class="text-sm text-slate-700 flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-brand-600 shrink-0" />
+                  {platform}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+
+    <div
+      class="mt-16 p-8 rounded-2xl bg-brand-50 border border-brand-100 text-center max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold text-brand-900">Need a custom integration?</h3>
+      <p class="text-slate-600 mt-2">
+        We build bi-directional sync, OAuth flows, data mapping, and marketplace-ready
+        connectors for SaaS platforms.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block mt-6 text-brand-700 font-semibold hover:text-brand-900">
+        Request a Free Consultation →
+      </a>
+    </div>
+
+    <Cta />
+  </Container>
+</Layout>

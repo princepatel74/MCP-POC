@@ -1,0 +1,54 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import Accelerators from "@/components/accelerators.astro";
+import Features from "@/components/features.astro";
+import Cta from "@/components/cta.astro";
+import { solutionCategories } from "@/data/solutions";
+import Link from "@/components/ui/link.astro";
+---
+
+<Layout
+  title="Solutions"
+  description="Accounting automation, financial reporting, ERP integrations, and SaaS product development solutions.">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Our Solutions</Fragment>
+      <Fragment slot="desc">
+        Pre-built accelerators and custom solutions for accounting, ERP, and
+        finance automation — from AP/AR to real-time dashboards.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mt-16 max-w-5xl mx-auto">
+      {
+        solutionCategories.map((cat) => (
+          <div class="p-8 rounded-2xl border border-slate-200 bg-slate-50">
+            <h2 class="text-2xl font-bold text-brand-900 mb-6">{cat.title}</h2>
+            <ul class="space-y-5">
+              {cat.items.map((item) => (
+                <li>
+                  <a href={item.href} class="group block">
+                    <h3 class="font-semibold text-brand-800 group-hover:text-brand-600">
+                      {item.title}
+                    </h3>
+                    <p class="text-sm text-slate-600 mt-1">{item.description}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+
+    <Accelerators />
+    <Features />
+
+    <div class="text-center mt-16">
+      <Link href="/contact">Request for Free Demo</Link>
+    </div>
+    <Cta />
+  </Container>
+</Layout>

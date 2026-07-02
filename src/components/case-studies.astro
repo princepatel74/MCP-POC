@@ -1,0 +1,55 @@
+---
+import { caseStudies } from "@/data/case-studies";
+import Link from "@/components/ui/link.astro";
+---
+
+<div class="mt-24">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+    <div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-brand-900">Our Work</h2>
+      <p class="text-lg mt-3 text-slate-600 max-w-2xl">
+        Real transformations for brands integrating accounting, ERP, eCommerce,
+        and CRM systems.
+      </p>
+    </div>
+    <Link href="/case-studies" style="outline" size="md">View All Case Studies</Link>
+  </div>
+
+  <div class="grid gap-8">
+    {
+      caseStudies.slice(0, 3).map((study, index) => (
+        <article
+          class:list={[
+            "grid md:grid-cols-2 gap-8 items-center p-6 rounded-2xl border border-slate-100 hover:shadow-lg transition",
+            index % 2 === 1 && "md:[direction:rtl] md:*:[direction:ltr]",
+          ]}>
+          <div class="aspect-video rounded-xl overflow-hidden bg-slate-100">
+            <img
+              src={study.image}
+              alt={study.client}
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-3xl font-bold text-brand-700">{study.metric}</span>
+              <span class="text-sm text-slate-500">{study.metricLabel}</span>
+            </div>
+            <h3 class="text-2xl font-bold text-brand-900 leading-snug">
+              {study.title}
+            </h3>
+            <p class="text-slate-600 mt-3 leading-relaxed">{study.summary}</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              {study.tags.map((tag) => (
+                <span class="text-xs bg-brand-50 text-brand-700 px-2.5 py-1 rounded-full">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</div>

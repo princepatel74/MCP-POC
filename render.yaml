@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: satva-mcp
+    runtime: node
+    buildCommand: npm install
+    startCommand: npx tsx mcp/server-http.ts
+    healthCheckPath: /health
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MCP_LOG_LEVEL
+        value: info
+      - key: MCP_API_KEY
+        generateValue: true
+      - key: MCP_DEMO_EMAIL_TO
+        value: sales@satvasolutions.com

@@ -1,0 +1,41 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import Cta from "@/components/cta.astro";
+import { faqs } from "@/data/faqs";
+---
+
+<Layout
+  title="FAQs"
+  description="Frequently asked questions about Satva Solutions accounting integrations, ERP integrations, finance automation, and SaaS development services.">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Frequently Asked Questions</Fragment>
+      <Fragment slot="desc">
+        Answers about our integrations, automation capabilities, and how we help
+        finance teams and SaaS companies.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="max-w-3xl mx-auto mt-16 space-y-4">
+      {
+        faqs.map((faq) => (
+          <details class="group rounded-xl border border-slate-200 bg-white open:shadow-sm">
+            <summary class="flex cursor-pointer items-center justify-between p-6 font-semibold text-brand-900 list-none">
+              {faq.question}
+              <span class="text-brand-600 group-open:rotate-45 transition-transform text-xl">
+                +
+              </span>
+            </summary>
+            <div class="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+              {faq.answer}
+            </div>
+          </details>
+        ))
+      }
+    </div>
+
+    <Cta />
+  </Container>
+</Layout>

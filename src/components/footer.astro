@@ -1,0 +1,83 @@
+---
+import { company, contact } from "@/data/site";
+import { integrationCategories } from "@/data/integrations";
+import Container from "@/components/container.astro";
+---
+
+<footer class="mt-24 border-t border-slate-200 bg-slate-50">
+  <Container>
+    <div class="grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <span
+            class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-800 text-sm font-bold text-white"
+            >S</span
+          >
+          <span class="font-bold text-brand-900">{company.name}</span>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          {company.description}
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-brand-900 mb-4">Solutions</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><a href="/solutions" class="hover:text-brand-700">Accounting Automation</a></li>
+          <li><a href="/solutions" class="hover:text-brand-700">Financial Reporting</a></li>
+          <li><a href="/solutions" class="hover:text-brand-700">eCommerce Finance</a></li>
+          <li><a href="/solutions" class="hover:text-brand-700">Connected Business Systems</a></li>
+          <li><a href="/case-studies" class="hover:text-brand-700">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-brand-900 mb-4">Integrations</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          {
+            integrationCategories.slice(0, 2).map((cat) => (
+              <li>
+                <a href="/services" class="hover:text-brand-700">{cat.title}</a>
+              </li>
+            ))
+          }
+          <li><a href="/services" class="hover:text-brand-700">eCommerce Integrations</a></li>
+          <li><a href="/services" class="hover:text-brand-700">CRM Integrations</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-brand-900 mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>
+            <a href={contact.phoneHref} class="hover:text-brand-700">{contact.phone}</a>
+          </li>
+          <li>
+            <a href={`mailto:${contact.email}`} class="hover:text-brand-700">{contact.email}</a>
+          </li>
+          {
+            contact.locations.map((loc) => (
+              <li class="pt-2">
+                <span class="font-medium text-slate-700">{loc.label}</span><br />
+                <span class="text-xs">{loc.address}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="border-t border-slate-200 py-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-500">
+      <p>
+        Copyright © {new Date().getFullYear()} {company.legalName}. All Rights
+        Reserved.
+      </p>
+      <div class="flex gap-4">
+        <a href="/faq" class="hover:text-brand-700">FAQs</a>
+        <a href="/blog" class="hover:text-brand-700">Blog</a>
+        <a href="/contact" class="hover:text-brand-700">Contact</a>
+      </div>
+    </div>
+  </Container>
+</footer>

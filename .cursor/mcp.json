@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "satva-local": {
+      "command": "npx",
+      "args": ["tsx", "mcp/server.ts"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

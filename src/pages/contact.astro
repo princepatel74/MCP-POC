@@ -1,0 +1,61 @@
+---
+import Contactform from "@/components/contactform.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import Layout from "@/layouts/Layout.astro";
+import { company, contact } from "@/data/site";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Contact" description={`Contact ${company.name} for a free consultation on accounting and ERP integrations.`}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Contact Us</Fragment>
+      <Fragment slot="desc">Share your requirements — we'll respond within one business day.</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-12 mx-auto max-w-5xl mt-16">
+      <div>
+        <h2 class="font-semibold text-2xl text-brand-900">
+          Request a Free Consultation
+        </h2>
+        <p class="text-lg leading-relaxed text-slate-600 mt-3">
+          Tell us about your integration, automation, or SaaS product needs. Our
+          solutions advisors will help you find the right approach.
+        </p>
+        <div class="mt-8 space-y-4">
+          <div class="flex items-center gap-3 text-slate-700">
+            <Icon class="text-brand-600 w-5 h-5" name="uil:phone" />
+            <a href={contact.phoneHref} class="hover:text-brand-700 font-medium">
+              {contact.phone}
+            </a>
+          </div>
+          <div class="flex items-center gap-3 text-slate-700">
+            <Icon class="text-brand-600 w-5 h-5" name="uil:envelope" />
+            <a href={`mailto:${contact.email}`} class="hover:text-brand-700 font-medium">
+              {contact.email}
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-10 space-y-6">
+          {
+            contact.locations.map((loc) => (
+              <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+                <p class="font-semibold text-brand-900">{loc.label}</p>
+                <p class="text-sm text-slate-500 mt-1">{loc.org}</p>
+                <p class="text-sm text-slate-600 mt-2 flex items-start gap-2">
+                  <Icon class="text-brand-600 w-4 h-4 mt-0.5 shrink-0" name="uil:map-marker" />
+                  {loc.address}
+                </p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>
