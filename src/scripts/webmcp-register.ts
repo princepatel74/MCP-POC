@@ -89,17 +89,66 @@ const TOOL_DEFS = [
   },
 ] as const;
 
+function normalizeInput(input: unknown): Record<string, unknown> {
+  if (input && typeof input === "object" && !Array.isArray(input)) {
+    return input as Record<string, unknown>;
+  }
+  if (typeof input === "string") {
+    try {
+      return JSON.parse(input) as Record<string, unknown>;
+    } catch {
+      return {};
+    }
+  }
+  return {};
+}
+
 async function callToolBridge(tool: string, input: Record<string, unknown>) {
-  const res = await fetch("/api/webmcp", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ tool, input }),
-  });
-  const data = await res.json();
+  const base = window.location.origin;
+  const endpoint = tool === "book_demo" ? `${base}/api/book-demo` : `${base}/api/webmcp`;
+
+  let res: Response;
+  try {
+    res = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(tool === "book_demo" ? input : { tool, input }),
+    });
+  } catch {
+    throw new Error(
+      "Cannot reach API. Use `npx vercel dev` locally or deploy to Vercel — `npm run dev` does not serve /api routes.",
+    );
+  }
+
+  const text = await res.text();
+  let data: Record<string, unknown>;
+  try {
+    data = JSON.parse(text) as Record<string, unknown>;
+  } catch {
+    throw new Error(
+      res.status === 404
+        ? "API not found (404). Run `npx vercel dev` or deploy to Vercel."
+        : `API error ${res.status}: ${text.slice(0, 200)}`,
+    );
+  }
+
   if (!res.ok) {
-    throw new Error(data.error ?? `Tool ${tool} failed`);
+    throw new Error(String(data.error ?? `Tool ${tool} failed (${res.status})`));
   }
   return data;
+}
+
+function toolError(message: string) {
+  return {
+    content: [{ type: "text" as const, text: message }],
+    isError: true,
+  };
+}
+
+function toolSuccess(result: unknown) {
+  return {
+    content: [{ type: "text" as const, text: JSON.stringify(result, null, 2) }],
+  };
 }
 
 function registerWebMcpTools() {
@@ -116,11 +165,16 @@ function registerWebMcpTools() {
       name: def.name,
       description: def.description,
       inputSchema: def.inputSchema,
-      async execute(input: Record<string, unknown>) {
-        const result = await callToolBridge(def.name, input ?? {});
-        return {
-          content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-        };
+      async execute(input: unknown) {
+        try {
+          const args = normalizeInput(input);
+          const result = await callToolBridge(def.name, args);
+          return toolSuccess(result);
+        } catch (error) {
+          const message = error instanceof Error ? error.message : String(error);
+          console.error(`[WebMCP] ${def.name} failed:`, message);
+          return toolError(message);
+        }
       },
     });
   }

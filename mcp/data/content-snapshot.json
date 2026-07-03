@@ -1,0 +1,972 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://satvasolutions.com/",
+      "title": "Home",
+      "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+      "markdownContent": "# Marketing website done with Astro\n\nAstroship is a starter template for startups, marketing websites & landing pages. Built with Astro.build and TailwindCSS.\n\n# Home\n\nWe pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.\n\n",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Marketing website done with Astro",
+          "id": "marketing-website-done-with-astro"
+        },
+        {
+          "level": 1,
+          "text": "Home",
+          "id": "home"
+        }
+      ],
+      "metadata": {
+        "title": "Satva Solutions - Starter Template for Astro with Tailwind CSS",
+        "metaDescription": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/",
+        "openGraph": {
+          "url": "https://satvasolutions.com/",
+          "type": "website",
+          "title": "Satva Solutions - Starter Template for Astro with Tailwind CSS",
+          "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Satva Solutions - Starter Template for Astro with Tailwind CSS",
+          "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+          "url": "https://satvasolutions.com/"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/index.astro",
+      "type": "page"
+    },
+    {
+      "path": "/about",
+      "url": "https://satvasolutions.com/about",
+      "title": "About",
+      "description": "Deep finance domain expertise paired with engineering excellence.",
+      "markdownContent": "# About\n\nDeep finance domain expertise paired with engineering excellence.\n\nAbout Deep finance domain expertise paired with engineering excellence. Accounting & Finance, Engineered. is uniquely qualified with of experience working with custom accounting software, ERP integration, API integrations, and fintech app development. We help businesses and SaaS platforms automate financial workflows, connect disparate systems, and build products finance teams actually need. Trusted by . Certified on . 15+ Years Experience 50+ Integrations Built 6 Countries Served Looking for the best workplace experience? Join our team of finance-domain engineers, integration specialists, and product builders. We're always looking for talented people who understand both code and accounting. Join our team →",
+      "headings": [
+        {
+          "level": 1,
+          "text": "About",
+          "id": "about"
+        }
+      ],
+      "metadata": {
+        "title": "About | Satva Solutions",
+        "metaDescription": "Deep finance domain expertise paired with engineering excellence.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/about",
+        "openGraph": {
+          "url": "https://satvasolutions.com/about",
+          "type": "website",
+          "title": "About | Satva Solutions",
+          "description": "Deep finance domain expertise paired with engineering excellence.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "About | Satva Solutions",
+          "description": "Deep finance domain expertise paired with engineering excellence.",
+          "url": "https://satvasolutions.com/about"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/about.astro",
+      "type": "page"
+    },
+    {
+      "path": "/blog",
+      "url": "https://satvasolutions.com/blog",
+      "title": "Blog",
+      "description": "Practical guides on accounting integrations, ERP connectivity, and finance automation.",
+      "markdownContent": "# Blog\n\nPractical guides on accounting integrations, ERP connectivity, and finance automation.\n\nInsights for Integrations & Automation Practical guides on accounting integrations, ERP connectivity, and finance automation. • )) }",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Blog",
+          "id": "blog"
+        }
+      ],
+      "metadata": {
+        "title": "Blog | Satva Solutions",
+        "metaDescription": "Practical guides on accounting integrations, ERP connectivity, and finance automation.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/blog",
+        "openGraph": {
+          "url": "https://satvasolutions.com/blog",
+          "type": "website",
+          "title": "Blog | Satva Solutions",
+          "description": "Practical guides on accounting integrations, ERP connectivity, and finance automation.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Blog | Satva Solutions",
+          "description": "Practical guides on accounting integrations, ERP connectivity, and finance automation.",
+          "url": "https://satvasolutions.com/blog"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/blog.astro",
+      "type": "page"
+    },
+    {
+      "path": "/case-studies",
+      "url": "https://satvasolutions.com/case-studies",
+      "title": "Case-studies",
+      "description": "Real results from accounting integrations, ERP connections, and finance\r\n        automation projects across industries.",
+      "markdownContent": "# Case-studies\n\nReal results from accounting integrations, ERP connections, and finance\r\n        automation projects across industries.\n\nCase Studies Real results from accounting integrations, ERP connections, and finance automation projects across industries. ))} )) }",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Case-studies",
+          "id": "case-studies"
+        }
+      ],
+      "metadata": {
+        "title": "Case-studies | Satva Solutions",
+        "metaDescription": "Real results from accounting integrations, ERP connections, and finance\r\n        automation projects across industries.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/case-studies",
+        "openGraph": {
+          "url": "https://satvasolutions.com/case-studies",
+          "type": "website",
+          "title": "Case-studies | Satva Solutions",
+          "description": "Real results from accounting integrations, ERP connections, and finance\r\n        automation projects across industries.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Case-studies | Satva Solutions",
+          "description": "Real results from accounting integrations, ERP connections, and finance\r\n        automation projects across industries.",
+          "url": "https://satvasolutions.com/case-studies"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/case-studies.astro",
+      "type": "page"
+    },
+    {
+      "path": "/contact",
+      "url": "https://satvasolutions.com/contact",
+      "title": "Contact",
+      "description": "Share your requirements — we'll respond within one business day.",
+      "markdownContent": "# Contact\n\nShare your requirements — we'll respond within one business day.\n\nContact Us Share your requirements — we'll respond within one business day. Request a Free Consultation Tell us about your integration, automation, or SaaS product needs. Our solutions advisors will help you find the right approach. )) }",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Contact",
+          "id": "contact"
+        }
+      ],
+      "metadata": {
+        "title": "Contact | Satva Solutions",
+        "metaDescription": "Share your requirements — we'll respond within one business day.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/contact",
+        "openGraph": {
+          "url": "https://satvasolutions.com/contact",
+          "type": "website",
+          "title": "Contact | Satva Solutions",
+          "description": "Share your requirements — we'll respond within one business day.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Contact | Satva Solutions",
+          "description": "Share your requirements — we'll respond within one business day.",
+          "url": "https://satvasolutions.com/contact"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/contact.astro",
+      "type": "page"
+    },
+    {
+      "path": "/faq",
+      "url": "https://satvasolutions.com/faq",
+      "title": "Faq",
+      "description": "Answers about our integrations, automation capabilities, and how we help\r\n        finance teams and SaaS companies.",
+      "markdownContent": "# Faq\n\nAnswers about our integrations, automation capabilities, and how we help\r\n        finance teams and SaaS companies.\n\nFrequently Asked Questions Answers about our integrations, automation capabilities, and how we help finance teams and SaaS companies. + )) }",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Faq",
+          "id": "faq"
+        }
+      ],
+      "metadata": {
+        "title": "Faq | Satva Solutions",
+        "metaDescription": "Answers about our integrations, automation capabilities, and how we help\r\n        finance teams and SaaS companies.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/faq",
+        "openGraph": {
+          "url": "https://satvasolutions.com/faq",
+          "type": "website",
+          "title": "Faq | Satva Solutions",
+          "description": "Answers about our integrations, automation capabilities, and how we help\r\n        finance teams and SaaS companies.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Faq | Satva Solutions",
+          "description": "Answers about our integrations, automation capabilities, and how we help\r\n        finance teams and SaaS companies.",
+          "url": "https://satvasolutions.com/faq"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/faq.astro",
+      "type": "page"
+    },
+    {
+      "path": "/pricing",
+      "url": "https://satvasolutions.com/pricing",
+      "title": "Pricing",
+      "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+      "markdownContent": "# Pricing\n\nWe pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.\n\n",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Pricing",
+          "id": "pricing"
+        }
+      ],
+      "metadata": {
+        "title": "Pricing | Satva Solutions",
+        "metaDescription": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/pricing",
+        "openGraph": {
+          "url": "https://satvasolutions.com/pricing",
+          "type": "website",
+          "title": "Pricing | Satva Solutions",
+          "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Pricing | Satva Solutions",
+          "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+          "url": "https://satvasolutions.com/pricing"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/pricing.astro",
+      "type": "page"
+    },
+    {
+      "path": "/services",
+      "url": "https://satvasolutions.com/services",
+      "title": "Services",
+      "description": "Connect your business systems with certified expertise across 50+\r\n        accounting, ERP, eCommerce, and CRM platforms.",
+      "markdownContent": "# Services\n\nConnect your business systems with certified expertise across 50+\r\n        accounting, ERP, eCommerce, and CRM platforms.\n\nIntegration Services Connect your business systems with certified expertise across 50+ accounting, ERP, eCommerce, and CRM platforms. ))} )) } Need a custom integration? We build bi-directional sync, OAuth flows, data mapping, and marketplace-ready connectors for SaaS platforms. Request a Free Consultation →",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Services",
+          "id": "services"
+        }
+      ],
+      "metadata": {
+        "title": "Services | Satva Solutions",
+        "metaDescription": "Connect your business systems with certified expertise across 50+\r\n        accounting, ERP, eCommerce, and CRM platforms.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/services",
+        "openGraph": {
+          "url": "https://satvasolutions.com/services",
+          "type": "website",
+          "title": "Services | Satva Solutions",
+          "description": "Connect your business systems with certified expertise across 50+\r\n        accounting, ERP, eCommerce, and CRM platforms.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Services | Satva Solutions",
+          "description": "Connect your business systems with certified expertise across 50+\r\n        accounting, ERP, eCommerce, and CRM platforms.",
+          "url": "https://satvasolutions.com/services"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/services.astro",
+      "type": "page"
+    },
+    {
+      "path": "/solutions",
+      "url": "https://satvasolutions.com/solutions",
+      "title": "Solutions",
+      "description": "Pre-built accelerators and custom solutions for accounting, ERP, and\r\n        finance automation — from AP/AR to real-time dashboards.",
+      "markdownContent": "# Solutions\n\nPre-built accelerators and custom solutions for accounting, ERP, and\r\n        finance automation — from AP/AR to real-time dashboards.\n\nOur Solutions Pre-built accelerators and custom solutions for accounting, ERP, and finance automation — from AP/AR to real-time dashboards. ))} )) } Request for Free Demo",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Solutions",
+          "id": "solutions"
+        }
+      ],
+      "metadata": {
+        "title": "Solutions | Satva Solutions",
+        "metaDescription": "Pre-built accelerators and custom solutions for accounting, ERP, and\r\n        finance automation — from AP/AR to real-time dashboards.",
+        "keywords": [
+          "astro",
+          "tailwindcss",
+          "marketing",
+          "startup",
+          "saas",
+          "website template"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/solutions",
+        "openGraph": {
+          "url": "https://satvasolutions.com/solutions",
+          "type": "website",
+          "title": "Solutions | Satva Solutions",
+          "description": "Pre-built accelerators and custom solutions for accounting, ERP, and\r\n        finance automation — from AP/AR to real-time dashboards.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Solutions | Satva Solutions",
+          "description": "Pre-built accelerators and custom solutions for accounting, ERP, and\r\n        finance automation — from AP/AR to real-time dashboards.",
+          "url": "https://satvasolutions.com/solutions"
+        }
+      },
+      "sourceFile": "D:/Temp/MCP/src/pages/solutions.astro",
+      "type": "page"
+    }
+  ],
+  "blogPosts": [
+    {
+      "slug": "complete-guide-fullstack-development",
+      "path": "/blog/complete-guide-fullstack-development",
+      "url": "https://satvasolutions.com/blog/complete-guide-fullstack-development",
+      "title": "How to Implement Deferred Revenue in Zoho Books (Using Journals)",
+      "snippet": "A practical guide for CFOs and finance teams implementing deferred revenue workflows in Zoho Books using journal entries.",
+      "description": "A practical guide for CFOs and finance teams implementing deferred revenue workflows in Zoho Books using journal entries.",
+      "author": "Satva Solutions",
+      "category": "Accounting",
+      "tags": [
+        "zoho-books",
+        "deferred-revenue",
+        "accounting"
+      ],
+      "publishDate": "2025-11-15 10:00",
+      "content": "Deferred revenue — also called unearned revenue — represents payments received before goods or services are delivered. For SaaS companies, subscription prepayments, and service businesses with advance billing, getting this right in your accounting system is critical for accurate financial reporting.\r\n\r\n## Why deferred revenue matters\r\n\r\nWhen a customer pays upfront for a 12-month subscription, you cannot recognize all of that revenue on day one. GAAP and IFRS require you to spread recognition over the service period. Mis-handling this leads to overstated revenue, audit findings, and poor cash flow forecasting.\r\n\r\n## Setting up deferred revenue in Zoho Books\r\n\r\nZoho Books doesn't always provide a one-click deferred revenue module for every scenario. In practice, finance teams use a combination of:\r\n\r\n1. **Prepayment invoices** — Record the initial cash receipt against a liability account\r\n2. **Recurring journal entries** — Recognize revenue monthly from deferred to earned\r\n3. **Custom accounts** — Maintain separate deferred revenue GL accounts by product line\r\n\r\n## Step-by-step journal workflow\r\n\r\nEach month, create a journal entry that debits your Deferred Revenue liability and credits your Revenue account for the earned portion. Automating this via API integration eliminates manual spreadsheet tracking and reduces close-time errors.\r\n\r\n## When to integrate externally\r\n\r\nIf you're building a SaaS product on top of Zoho Books, or managing deferred revenue across multiple entities, API-based automation ensures consistency. Satva Solutions helps teams implement these workflows with bi-directional sync and validation rules that match your revenue recognition policy.",
+      "headings": [],
+      "metadata": {
+        "title": "How to Implement Deferred Revenue in Zoho Books (Using Journals) | Satva Solutions",
+        "metaDescription": "A practical guide for CFOs and finance teams implementing deferred revenue workflows in Zoho Books using journal entries.",
+        "keywords": [
+          "zoho-books",
+          "deferred-revenue",
+          "accounting"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/blog/complete-guide-fullstack-development",
+        "openGraph": {
+          "url": "https://satvasolutions.com/blog/complete-guide-fullstack-development",
+          "type": "article",
+          "title": "How to Implement Deferred Revenue in Zoho Books (Using Journals) | Satva Solutions",
+          "description": "A practical guide for CFOs and finance teams implementing deferred revenue workflows in Zoho Books using journal entries.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "name": "How to Implement Deferred Revenue in Zoho Books (Using Journals) | Satva Solutions",
+          "description": "A practical guide for CFOs and finance teams implementing deferred revenue workflows in Zoho Books using journal entries.",
+          "url": "https://satvasolutions.com/blog/complete-guide-fullstack-development"
+        }
+      },
+      "draft": false
+    },
+    {
+      "slug": "essential-data-structures-algorithms",
+      "path": "/blog/essential-data-structures-algorithms",
+      "url": "https://satvasolutions.com/blog/essential-data-structures-algorithms",
+      "title": "How Does AI Categorization Actually Work?",
+      "snippet": "A straightforward guide for CFOs, CPAs, and bookkeeping firms on how AI categorizes bank statement transactions in practice.",
+      "description": "A straightforward guide for CFOs, CPAs, and bookkeeping firms on how AI categorizes bank statement transactions in practice.",
+      "author": "Satva Solutions",
+      "category": "Automation",
+      "tags": [
+        "ai",
+        "bank-reconciliation",
+        "automation"
+      ],
+      "publishDate": "2025-10-20 09:00",
+      "content": "Bank statement categorization is one of the most time-consuming tasks in bookkeeping. AI-powered categorization promises to eliminate hours of manual work — but how does it actually work under the hood?\r\n\r\n## The problem with manual categorization\r\n\r\nEvery month, bookkeepers download bank feeds, open hundreds of transactions, and assign each to the correct GL account — meals, utilities, travel, payroll, and dozens more. Rules-based systems help for recurring vendors, but edge cases pile up fast.\r\n\r\n## How AI categorization works\r\n\r\nModern AI categorization systems typically combine:\r\n\r\n- **Pattern matching** on vendor names, amounts, and transaction descriptions\r\n- **Historical learning** from your past categorization decisions\r\n- **Confidence scoring** so low-confidence items route to human review\r\n- **Context from integrations** — linking to invoices, bills, and receipts in your accounting system\r\n\r\n## What finance leaders should expect\r\n\r\nAI won't replace your accountant, but it can handle 70–90% of routine transactions automatically. The key is integration: categorization works best when connected to QuickBooks, Xero, or your ERP so approved categories post directly without CSV exports.\r\n\r\n## Building AI into your finance stack\r\n\r\nSatva Solutions implements AI categorization as part of broader automation projects — connecting bank feeds, document processing, and accounting platforms into a single workflow with audit trails and approval gates.",
+      "headings": [],
+      "metadata": {
+        "title": "How Does AI Categorization Actually Work? | Satva Solutions",
+        "metaDescription": "A straightforward guide for CFOs, CPAs, and bookkeeping firms on how AI categorizes bank statement transactions in practice.",
+        "keywords": [
+          "ai",
+          "bank-reconciliation",
+          "automation"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/blog/essential-data-structures-algorithms",
+        "openGraph": {
+          "url": "https://satvasolutions.com/blog/essential-data-structures-algorithms",
+          "type": "article",
+          "title": "How Does AI Categorization Actually Work? | Satva Solutions",
+          "description": "A straightforward guide for CFOs, CPAs, and bookkeeping firms on how AI categorizes bank statement transactions in practice.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "name": "How Does AI Categorization Actually Work? | Satva Solutions",
+          "description": "A straightforward guide for CFOs, CPAs, and bookkeeping firms on how AI categorizes bank statement transactions in practice.",
+          "url": "https://satvasolutions.com/blog/essential-data-structures-algorithms"
+        }
+      },
+      "draft": false
+    },
+    {
+      "slug": "how-to-become-frontend-master",
+      "path": "/blog/how-to-become-frontend-master",
+      "url": "https://satvasolutions.com/blog/how-to-become-frontend-master",
+      "title": "How to Generate Cash Flow Reports from Xero When the API Doesn't Offer It (Yet)",
+      "snippet": "A technical guide for developers building automated reporting engines and real-time financial dashboards on top of Xero.",
+      "description": "A technical guide for developers building automated reporting engines and real-time financial dashboards on top of Xero.",
+      "author": "Satva Solutions",
+      "category": "Integrations",
+      "tags": [
+        "xero",
+        "cash-flow",
+        "api",
+        "reporting"
+      ],
+      "publishDate": "2025-09-10 11:00",
+      "content": "If you've tried to build an automated reporting engine or real-time financial dashboard on top of Xero, you've likely hit this wall: the API doesn't expose a native cash flow report endpoint the way the Xero UI does.\r\n\r\n## Why this gap exists\r\n\r\nXero's cash flow statement is derived from balance sheet movements, P&L data, and account classifications — not a single API resource. Developers need to reconstruct the logic programmatically.\r\n\r\n## Approach 1: Derive from balance sheets\r\n\r\nPull balance sheet reports at two points in time and calculate the delta across operating, investing, and financing categories. Map Xero account types to cash flow line items using a configuration layer.\r\n\r\n## Approach 2: Transaction-level aggregation\r\n\r\nFor more granular control, pull bank transactions, invoices, bills, and payments — then classify each into cash flow categories. This approach scales better for multi-entity reporting but requires robust data mapping.\r\n\r\n## Approach 3: Hybrid with scheduled sync\r\n\r\nMost production systems use a hybrid: scheduled monthly sync for official reports, plus near-real-time transaction feeds for dashboard widgets. OAuth 2.0 authentication and rate-limit handling are essential.\r\n\r\n## Getting it right in production\r\n\r\nSatva Solutions has built Xero integrations for forecasting platforms, SaaS dashboards, and multi-entity reporting tools. The key is accounting-aware data mapping — not just API calls, but understanding how finance teams actually use the numbers.",
+      "headings": [],
+      "metadata": {
+        "title": "How to Generate Cash Flow Reports from Xero When the API Doesn't Offer It (Yet) | Satva Solutions",
+        "metaDescription": "A technical guide for developers building automated reporting engines and real-time financial dashboards on top of Xero.",
+        "keywords": [
+          "xero",
+          "cash-flow",
+          "api",
+          "reporting"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/blog/how-to-become-frontend-master",
+        "openGraph": {
+          "url": "https://satvasolutions.com/blog/how-to-become-frontend-master",
+          "type": "article",
+          "title": "How to Generate Cash Flow Reports from Xero When the API Doesn't Offer It (Yet) | Satva Solutions",
+          "description": "A technical guide for developers building automated reporting engines and real-time financial dashboards on top of Xero.",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "name": "How to Generate Cash Flow Reports from Xero When the API Doesn't Offer It (Yet) | Satva Solutions",
+          "description": "A technical guide for developers building automated reporting engines and real-time financial dashboards on top of Xero.",
+          "url": "https://satvasolutions.com/blog/how-to-become-frontend-master"
+        }
+      },
+      "draft": false
+    },
+    {
+      "slug": "kitchensink",
+      "path": "/blog/kitchensink",
+      "url": "https://satvasolutions.com/blog/kitchensink",
+      "title": "Typography Example Post",
+      "snippet": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat",
+      "description": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat",
+      "author": "Charles North",
+      "category": "Technology",
+      "tags": [
+        "mdx",
+        "astro",
+        "blog"
+      ],
+      "publishDate": "2022-11-05 15:36",
+      "content": "import Button from \"@/components/ui/button.astro\";\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\n## <a name=\"Headings\"></a>Headings\r\n\r\nSint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem. Ut laborum cillum laboris fugiat culpa sint irure do reprehenderit culpa occaecat. Exercitation esse mollit tempor magna aliqua in occaecat aliquip veniam reprehenderit nisi dolor in laboris dolore velit.\r\n\r\n## Heading two\r\n\r\nAute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim. Incididunt enim excepteur do veniam consequat culpa do voluptate dolor fugiat ad adipisicing sit. Labore officia est adipisicing dolore proident eiusmod exercitation deserunt ullamco anim do occaecat velit. Elit dolor consectetur proident sunt aliquip est do tempor quis aliqua culpa aute. Duis in tempor exercitation pariatur et adipisicing mollit irure tempor ut enim esse commodo laboris proident. Do excepteur laborum anim esse aliquip eu sit id Lorem incididunt elit irure ea nulla dolor et. Nulla amet fugiat qui minim deserunt enim eu cupidatat aute officia do velit ea reprehenderit.\r\n\r\n### Heading three\r\n\r\nVoluptate cupidatat cillum elit quis ipsum eu voluptate fugiat consectetur enim. Quis ut voluptate culpa ex anim aute consectetur dolore proident voluptate exercitation eiusmod. Esse in do anim magna minim culpa sint. Adipisicing ipsum consectetur proident ullamco magna sit amet aliqua aute fugiat laborum exercitation duis et.\r\n\r\n#### Heading four\r\n\r\nCommodo fugiat aliqua minim quis pariatur mollit id tempor. Non occaecat minim esse enim aliqua adipisicing nostrud duis consequat eu adipisicing qui. Minim aliquip sit excepteur ipsum consequat laborum pariatur excepteur. Veniam fugiat et amet ad elit anim laborum duis mollit occaecat et et ipsum et reprehenderit. Occaecat aliquip dolore adipisicing sint labore occaecat officia fugiat. Quis adipisicing exercitation exercitation eu amet est laboris sunt nostrud ipsum reprehenderit ullamco. Enim sint ut consectetur id anim aute voluptate exercitation mollit dolore magna magna est Lorem. Ut adipisicing adipisicing aliqua ullamco voluptate labore nisi tempor esse magna incididunt.\r\n\r\n##### Heading five\r\n\r\nVeniam enim esse amet veniam deserunt laboris amet enim consequat. Minim nostrud deserunt cillum consectetur commodo eu enim nostrud ullamco occaecat excepteur. Aliquip et ut est commodo enim dolor amet sint excepteur. Amet ad laboris laborum deserunt sint sunt aliqua commodo ex duis deserunt enim est ex labore ut. Duis incididunt velit adipisicing non incididunt adipisicing adipisicing. Ad irure duis nisi tempor eu dolor fugiat magna et consequat tempor eu ex dolore. Mollit esse nisi qui culpa ut nisi ex proident culpa cupidatat cillum culpa occaecat anim. Ut officia sit ea nisi ea excepteur nostrud ipsum et nulla.\r\n\r\n###### Heading six\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Paragraphs\"></a>Paragraphs\r\n\r\nIncididunt ex adipisicing ea ullamco consectetur in voluptate proident fugiat tempor deserunt reprehenderit ullamco id dolore laborum. Do laboris laboris minim incididunt qui consectetur exercitation adipisicing dolore et magna consequat magna anim sunt. Officia fugiat Lorem sunt pariatur incididunt Lorem reprehenderit proident irure. Dolore ipsum aliqua mollit ad officia fugiat sit eu aliquip cupidatat ipsum duis laborum laborum fugiat esse. Voluptate anim ex dolore deserunt ea ex eiusmod irure. Occaecat excepteur aliqua exercitation aliquip dolor esse eu eu.\r\n\r\nOfficia dolore laborum aute incididunt commodo nisi velit est est elit et dolore elit exercitation. Enim aliquip magna id ipsum aliquip consectetur ad nulla quis. Incididunt pariatur dolor consectetur cillum enim velit cupidatat laborum quis ex.\r\n\r\nOfficia irure in non voluptate adipisicing sit amet tempor duis dolore deserunt enim ut. Reprehenderit incididunt in ad anim et deserunt deserunt Lorem laborum quis. Enim aute anim labore proident laboris voluptate elit excepteur in. Ex labore nulla velit officia ullamco Lorem Lorem id do. Dolore ullamco ipsum magna dolor pariatur voluptate ipsum id occaecat ipsum. Dolore tempor quis duis commodo quis quis enim.\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Blockquotes\"></a>Blockquotes\r\n\r\nAd nisi laborum aute cupidatat magna deserunt eu id laboris id. Aliquip nulla cupidatat sint ex Lorem mollit laborum dolor amet est ut esse aute. Nostrud ex consequat id incididunt proident ipsum minim duis aliqua ut ex et ad quis. Laborum sint esse cillum anim nulla cillum consectetur aliqua sit. Nisi excepteur cillum labore amet excepteur commodo enim occaecat consequat ipsum proident exercitation duis id in.\r\n\r\n> Ipsum et cupidatat mollit exercitation enim duis sunt irure aliqua reprehenderit mollit. Pariatur Lorem pariatur laboris do culpa do elit irure. Eiusmod amet nulla voluptate velit culpa et aliqua ad reprehenderit sit ut.\r\n\r\nLabore ea magna Lorem consequat aliquip consectetur cillum duis dolore. Et veniam dolor qui incididunt minim amet laboris sit. Dolore ad esse commodo et dolore amet est velit ut nisi ea. Excepteur ea nulla commodo dolore anim dolore adipisicing eiusmod labore id enim esse quis mollit deserunt est. Minim ea culpa voluptate nostrud commodo proident in duis aliquip minim.\r\n\r\n> Qui est sit et reprehenderit aute est esse enim aliqua id aliquip ea anim. Pariatur sint reprehenderit mollit velit voluptate enim consectetur sint enim. Quis exercitation proident elit non id qui culpa dolore esse aliquip consequat.\r\n\r\nIpsum excepteur cupidatat sunt minim ad eiusmod tempor sit.\r\n\r\n> Deserunt excepteur adipisicing culpa pariatur cillum laboris ullamco nisi fugiat cillum officia. In cupidatat nulla aliquip tempor ad Lorem Lorem quis voluptate officia consectetur pariatur ex in est duis. Mollit id esse est elit exercitation voluptate nostrud nisi laborum magna dolore dolore tempor in est consectetur.\r\n\r\nAdipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat veniam ullamco occaecat do ut. Tempor et esse reprehenderit veniam proident ipsum irure sit ullamco et labore ea excepteur nulla labore ut. Ex aute minim quis tempor in eu id id irure ea nostrud dolor esse.\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Lists\"></a>Lists\r\n\r\n### Ordered List\r\n\r\n1. Longan\r\n2. Lychee\r\n3. Excepteur ad cupidatat do elit laborum amet cillum reprehenderit consequat quis.\r\n   Deserunt officia esse aliquip consectetur duis ut labore laborum commodo aliquip aliquip velit pariatur dolore.\r\n4. Marionberry\r\n5. Melon\r\n   - Cantaloupe\r\n   - Honeydew\r\n   - Watermelon\r\n6. Miracle fruit\r\n7. Mulberry\r\n\r\n### Unordered List\r\n\r\n- Olive\r\n- Orange\r\n  - Blood orange\r\n  - Clementine\r\n- Papaya\r\n- Ut aute ipsum occaecat nisi culpa Lorem id occaecat cupidatat id id magna laboris ad duis. Fugiat cillum dolore veniam nostrud proident sint consectetur eiusmod irure adipisicing.\r\n- Passionfruit\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Horizontal\"></a>Horizontal rule\r\n\r\nIn dolore velit aliquip labore mollit minim tempor veniam eu veniam ad in sint aliquip mollit mollit. Ex occaecat non deserunt elit laborum sunt tempor sint consequat culpa culpa qui sit. Irure ad commodo eu voluptate mollit cillum cupidatat veniam proident amet minim reprehenderit.\r\n\r\n---\r\n\r\nIn laboris eiusmod reprehenderit aliquip sit proident occaecat. Non sit labore anim elit veniam Lorem minim commodo eiusmod irure do minim nisi. Dolor amet cillum excepteur consequat sint non sint.\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Table\"></a>Table\r\n\r\nDuis sunt ut pariatur reprehenderit mollit mollit magna dolore in pariatur nulla commodo sit dolor ad fugiat. Laboris amet ea occaecat duis eu enim exercitation deserunt ea laborum occaecat reprehenderit. Et incididunt dolor commodo consequat mollit nisi proident non pariatur in et incididunt id. Eu ut et Lorem ea ex magna minim ipsum ipsum do.\r\n\r\n| Table Heading 1 | Table Heading 2 | Center align | Right align | Table Heading 5 |\r\n| :-------------- | :-------------- | :----------: | ----------: | :-------------- |\r\n| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |\r\n| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |\r\n| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |\r\n| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |\r\n| Item 1          | Item 2          |    Item 3    |      Item 4 | Item 5          |\r\n\r\nMinim id consequat adipisicing cupidatat laborum culpa veniam non consectetur et duis pariatur reprehenderit eu ex consectetur. Sunt nisi qui eiusmod ut cillum laborum Lorem officia aliquip laboris ullamco nostrud laboris non irure laboris. Cillum dolore labore Lorem deserunt mollit voluptate esse incididunt ex dolor.\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Code\"></a>Code\r\n\r\n### Inline code\r\n\r\nAd amet irure est magna id mollit Lorem in do duis enim. Excepteur velit nisi magna ea pariatur pariatur ullamco fugiat deserunt sint non sint. Duis duis est `code in text` velit velit aute culpa ex quis pariatur pariatur laborum aute pariatur duis tempor sunt ad. Irure magna voluptate dolore consectetur consectetur irure esse. Anim magna `<strong>in culpa qui officia</strong>` dolor eiusmod esse amet aute cupidatat aliqua do id voluptate cupidatat reprehenderit amet labore deserunt.\r\n\r\n### Highlighted\r\n\r\nEt fugiat ad nisi amet magna labore do cillum fugiat occaecat cillum Lorem proident. In sint dolor ullamco ad do adipisicing amet id excepteur Lorem aliquip sit irure veniam laborum duis cillum. Aliqua occaecat minim cillum deserunt magna sunt laboris do do irure ea nostrud consequat ut voluptate ex.\r\n\r\n```go\r\npackage main\r\n\r\nimport (\r\n    \"fmt\"\r\n    \"net/http\"\r\n)\r\n\r\nfunc handler(w http.ResponseWriter, r *http.Request) {\r\n    fmt.Fprintf(w, \"Hi there, I love %s!\", r.URL.Path[1:])\r\n}\r\n\r\nfunc main() {\r\n    http.HandleFunc(\"/\", handler)\r\n    http.ListenAndServe(\":8080\", nil)\r\n}\r\n```\r\n\r\nEx amet id ex aliquip id do laborum excepteur exercitation elit sint commodo occaecat nostrud est. Nostrud pariatur esse veniam laborum non sint magna sit laboris minim in id. Aliqua pariatur pariatur excepteur adipisicing irure culpa consequat commodo et ex id ad.\r\n\r\n[[Top]](#top)\r\n\r\n## <a name=\"Inline\"></a>Inline elements\r\n\r\nSint ea anim ipsum ad commodo cupidatat do **exercitation** incididunt et minim ad labore sunt. Minim deserunt labore laboris velit nulla incididunt ipsum nulla. Ullamco ad laborum ea qui et anim in laboris exercitation tempor sit officia laborum reprehenderit culpa velit quis. **Consequat commodo** reprehenderit duis [irure](#!) esse esse exercitation minim enim Lorem dolore duis irure. Nisi Lorem reprehenderit ea amet excepteur dolor excepteur magna labore proident voluptate ipsum. Reprehenderit ex esse deserunt aliqua ea officia mollit Lorem nulla magna enim. Et ad ipsum labore enim ipsum **cupidatat consequat**. Commodo non ea cupidatat magna deserunt dolore ipsum velit nulla elit veniam nulla eiusmod proident officia.\r\n\r\n![Super wide](https://images.unsplash.com/photo-1471128466710-c26ff0d26143?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2MDc4MTk3Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)\r\n\r\n_Proident sit veniam in est proident officia adipisicing_ ea tempor cillum non cillum velit deserunt. Voluptate laborum incididunt sit consectetur Lorem irure incididunt voluptate nostrud. Commodo ut eiusmod tempor cupidatat esse enim minim ex anim consequat. Mollit sint culpa qui laboris quis consectetur ad sint esse. Amet anim anim minim ullamco et duis non irure. Sit tempor adipisicing ea laboris `culpa ex duis sint` anim aute reprehenderit id eu ea. Aute [excepteur proident](#!) Lorem minim adipisicing nostrud mollit ad ut voluptate do nulla esse occaecat aliqua sint anim.\r\n\r\n![Not so big](https://placekitten.com/480/400)\r\n\r\nIncididunt in culpa cupidatat mollit cillum qui proident sit. In cillum aliquip incididunt voluptate magna amet cupidatat cillum pariatur sint aliqua est _enim **anim** voluptate_. Magna aliquip proident incididunt id duis pariatur eiusmod incididunt commodo culpa dolore sit. Culpa do nostrud elit ad exercitation anim pariatur non minim nisi **adipisicing sunt _officia_**. Do deserunt magna mollit Lorem commodo ipsum do cupidatat mollit enim ut elit veniam ea voluptate.\r\n\r\nReprehenderit non eu quis in ad elit esse qui aute id [incididunt](#!) dolore cillum. Esse laboris consequat dolor anim exercitation tempor aliqua deserunt velit magna laboris. Culpa culpa minim duis amet mollit do quis amet commodo nulla irure.\r\n\r\n[[Top]](#top)\r\n\r\n## MDX\r\n\r\n```js\r\n---\r\npublishDate: 'Aug 02 2022'\r\ntitle: 'Markdown elements demo post'\r\n---\r\nimport Logo from \"@/components/ui/button.astro\";\r\n\r\n## MDX\r\n\r\n<Button>Click</Button>\r\n```\r\n\r\n<div>\r\n  <Button>Click Me</Button>\r\n</div>\r\n\r\n[[Top]](#top)",
+      "headings": [],
+      "metadata": {
+        "title": "Typography Example Post | Satva Solutions",
+        "metaDescription": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat",
+        "keywords": [
+          "mdx",
+          "astro",
+          "blog"
+        ],
+        "canonicalUrl": "https://satvasolutions.com/blog/kitchensink",
+        "openGraph": {
+          "url": "https://satvasolutions.com/blog/kitchensink",
+          "type": "article",
+          "title": "Typography Example Post | Satva Solutions",
+          "description": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat",
+          "image": "https://satvasolutions.com/opengraph.jpg",
+          "imageAlt": "Satva Solutions page screenshot",
+          "siteName": "Satva Solutions",
+          "twitterCreator": "@surjithctly"
+        },
+        "jsonLd": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "name": "Typography Example Post | Satva Solutions",
+          "description": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat",
+          "url": "https://satvasolutions.com/blog/kitchensink"
+        }
+      },
+      "draft": false
+    }
+  ],
+  "teamMembers": [
+    {
+      "slug": "janette-lynch",
+      "name": "Janette Lynch",
+      "title": "Senior Director",
+      "publishDate": "2022-11-07 15:39"
+    },
+    {
+      "slug": "marcell-ziemann",
+      "name": "Marcell Ziemann",
+      "title": "Principal Strategist",
+      "publishDate": "2022-11-08 15:39"
+    },
+    {
+      "slug": "robert-palmer",
+      "name": "Robert Palmer",
+      "title": "Marketing Engineer",
+      "publishDate": "2022-11-09 15:39"
+    }
+  ],
+  "pricing": [],
+  "services": [
+    {
+      "id": "system-integration",
+      "name": "System Integration",
+      "description": "API integration, B2B integration, and accounting integration across QuickBooks, HubSpot, Stripe, and NetSuite.",
+      "icon": "bx:bx-link-alt"
+    },
+    {
+      "id": "business-automation",
+      "name": "Business Automation",
+      "description": "Automate repetitive tasks with RPA and streamline financial workflows across your business systems.",
+      "icon": "bx:bx-bot"
+    },
+    {
+      "id": "financial-reporting",
+      "name": "Financial Reporting & Dashboards",
+      "description": "CXO dashboards with real-time business performance data from accounting, ERP, CRM, and eCommerce.",
+      "icon": "bx:bx-bar-chart-alt-2"
+    },
+    {
+      "id": "accounting-integration",
+      "name": "Multiple Accounting Integration",
+      "description": "Integrate with QuickBooks, Xero, Zoho Books, and more with real-time bi-directional sync.",
+      "icon": "bx:bx-calculator"
+    },
+    {
+      "id": "erp-integration",
+      "name": "Multiple ERP Integration",
+      "description": "Connect to SAP, NetSuite, Sage, and Dynamics 365 with ready-to-deploy cloud integrations.",
+      "icon": "bx:bx-server"
+    },
+    {
+      "id": "fintech-solutions",
+      "name": "FinTech Solutions",
+      "description": "Purchasing, accounting, payroll, budgeting, and MIS dashboards for finance teams.",
+      "icon": "bx:bx-wallet"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "specialization",
+      "question": "What does Satva Solutions specialize in?",
+      "answer": "Satva Solutions specializes in accounting integrations, ERP integrations, finance automation, SaaS product development, reporting dashboards, and custom business system integrations.",
+      "category": "General"
+    },
+    {
+      "id": "platforms",
+      "question": "Which accounting and ERP systems can Satva Solutions integrate?",
+      "answer": "QuickBooks, Xero, MYOB, FreshBooks, Zoho Books, SAP, Oracle NetSuite, Sage, Microsoft Dynamics 365 Business Central, Odoo, and Acumatica.",
+      "category": "Integrations"
+    },
+    {
+      "id": "saas-integrations",
+      "question": "Can Satva Solutions help SaaS companies build accounting integrations?",
+      "answer": "Yes. We help SaaS companies build accounting and ERP integrations including API integration, authentication, data mapping, bi-directional sync, and marketplace launch support.",
+      "category": "SaaS"
+    },
+    {
+      "id": "automation",
+      "question": "What business processes can Satva Solutions automate?",
+      "answer": "Invoice processing, AP, AR, bank reconciliation, order sync, inventory updates, payment matching, payroll journal posting, and financial reporting.",
+      "category": "Automation"
+    },
+    {
+      "id": "dashboards",
+      "question": "Does Satva Solutions build financial reporting dashboards?",
+      "answer": "Yes. Dashboards connecting accounting, ERP, CRM, payroll, eCommerce, and inventory systems with cash flow, revenue, and KPI views.",
+      "category": "Reporting"
+    },
+    {
+      "id": "staff-augmentation",
+      "question": "Does Satva Solutions offer IT staff augmentation?",
+      "answer": "Yes. Developers, integration specialists, QA engineers, AI/ML engineers, and product engineers with finance-domain expertise.",
+      "category": "Services"
+    }
+  ],
+  "contact": {
+    "email": "sales@satvasolutions.com",
+    "phone": "+1 415 802 0027",
+    "address": {
+      "street": "1401 21st ST #10677",
+      "city": "Sacramento",
+      "state": "California",
+      "postalCode": "95811",
+      "country": "USA",
+      "formatted": "1401 21st ST #10677, Sacramento, California 95811"
+    },
+    "social": {
+      "website": "https://satvasolutions.com",
+      "linkedin": "https://www.linkedin.com/company/satva-solutions"
+    },
+    "businessHours": {
+      "weekdays": "Monday – Friday, 9:00 AM – 6:00 PM PST",
+      "weekends": "Closed",
+      "timezone": "America/Los_Angeles"
+    }
+  },
+  "company": {
+    "name": "Satva Solutions",
+    "tagline": "Accounting & ERP Integration | Fintech Software Development",
+    "description": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+    "founded": "2010",
+    "mission": "Accounting & Finance, Engineered — connecting accounting, ERP, CRM, and eCommerce systems for businesses and SaaS platforms worldwide.",
+    "values": [
+      "Finance domain expertise",
+      "Production-tested integrations",
+      "Accounting-certified engineering",
+      "Client-first delivery"
+    ],
+    "siteUrl": "https://satvasolutions.com"
+  },
+  "robotsTxt": "User-agent: *\r\nAllow: /\r\n\r\nSitemap: https://satvasolutions.com/sitemap-index.xml\r\n\r\n# MCP server (Model Context Protocol) — AI platform discovery\r\n# Manifest: /.well-known/mcp.json\r\n# Endpoint: /mcp\r\n",
+  "sitemapXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><sitemap><loc>https://satvasolutions.com/sitemap-0.xml</loc></sitemap></sitemapindex>",
+  "searchDocuments": [
+    {
+      "id": "page:/",
+      "title": "Home",
+      "url": "https://satvasolutions.com/",
+      "path": "/",
+      "summary": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+      "body": "Marketing website done with Astro Astroship is a starter template for startups, marketing websites & landing pages. Built with Astro.build and TailwindCSS. Home We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+      "type": "page"
+    },
+    {
+      "id": "page:/about",
+      "title": "About",
+      "url": "https://satvasolutions.com/about",
+      "path": "/about",
+      "summary": "Deep finance domain expertise paired with engineering excellence.",
+      "body": "About Deep finance domain expertise paired with engineering excellence. About Deep finance domain expertise paired with engineering excellence. Accounting & Finance, Engineered. is uniquely qualified with of experience working with custom accounting software, ERP integration, API integrations, and fintech app development. We help businesses and SaaS platforms automate financial workflows, connect disparate systems, and build products finance teams actually need. Trusted by . Certified on . 15+ Years Experience 50+ Integrations Built 6 Countries Served Looking for the best workplace experience? Join our team of finance-domain engineers, integration specialists, and product builders. We're always looking for talented people who understand both code and accounting. Join our team →",
+      "type": "page"
+    },
+    {
+      "id": "page:/blog",
+      "title": "Blog",
+      "url": "https://satvasolutions.com/blog",
+      "path": "/blog",
+      "summary": "Practical guides on accounting integrations, ERP connectivity, and finance automation.",
+      "body": "Blog Practical guides on accounting integrations, ERP connectivity, and finance automation. Insights for Integrations & Automation Practical guides on accounting integrations, ERP connectivity, and finance automation. • )) }",
+      "type": "page"
+    },
+    {
+      "id": "page:/case-studies",
+      "title": "Case-studies",
+      "url": "https://satvasolutions.com/case-studies",
+      "path": "/case-studies",
+      "summary": "Real results from accounting integrations, ERP connections, and finance\r\n        automation projects across industries.",
+      "body": "Case-studies Real results from accounting integrations, ERP connections, and finance automation projects across industries. Case Studies Real results from accounting integrations, ERP connections, and finance automation projects across industries. ))} )) }",
+      "type": "page"
+    },
+    {
+      "id": "page:/contact",
+      "title": "Contact",
+      "url": "https://satvasolutions.com/contact",
+      "path": "/contact",
+      "summary": "Share your requirements — we'll respond within one business day.",
+      "body": "Contact Share your requirements — we'll respond within one business day. Contact Us Share your requirements — we'll respond within one business day. Request a Free Consultation Tell us about your integration, automation, or SaaS product needs. Our solutions advisors will help you find the right approach. )) }",
+      "type": "page"
+    },
+    {
+      "id": "page:/faq",
+      "title": "Faq",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "Answers about our integrations, automation capabilities, and how we help\r\n        finance teams and SaaS companies.",
+      "body": "Faq Answers about our integrations, automation capabilities, and how we help finance teams and SaaS companies. Frequently Asked Questions Answers about our integrations, automation capabilities, and how we help finance teams and SaaS companies. + )) }",
+      "type": "page"
+    },
+    {
+      "id": "page:/pricing",
+      "title": "Pricing",
+      "url": "https://satvasolutions.com/pricing",
+      "path": "/pricing",
+      "summary": "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+      "body": "Pricing We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+      "type": "page"
+    },
+    {
+      "id": "page:/services",
+      "title": "Services",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "Connect your business systems with certified expertise across 50+\r\n        accounting, ERP, eCommerce, and CRM platforms.",
+      "body": "Services Connect your business systems with certified expertise across 50+ accounting, ERP, eCommerce, and CRM platforms. Integration Services Connect your business systems with certified expertise across 50+ accounting, ERP, eCommerce, and CRM platforms. ))} )) } Need a custom integration? We build bi-directional sync, OAuth flows, data mapping, and marketplace-ready connectors for SaaS platforms. Request a Free Consultation →",
+      "type": "page"
+    },
+    {
+      "id": "page:/solutions",
+      "title": "Solutions",
+      "url": "https://satvasolutions.com/solutions",
+      "path": "/solutions",
+      "summary": "Pre-built accelerators and custom solutions for accounting, ERP, and\r\n        finance automation — from AP/AR to real-time dashboards.",
+      "body": "Solutions Pre-built accelerators and custom solutions for accounting, ERP, and finance automation — from AP/AR to real-time dashboards. Our Solutions Pre-built accelerators and custom solutions for accounting, ERP, and finance automation — from AP/AR to real-time dashboards. ))} )) } Request for Free Demo",
+      "type": "page"
+    },
+    {
+      "id": "blog:complete-guide-fullstack-development",
+      "title": "How to Implement Deferred Revenue in Zoho Books (Using Journals)",
+      "url": "https://satvasolutions.com/blog/complete-guide-fullstack-development",
+      "path": "/blog/complete-guide-fullstack-development",
+      "summary": "A practical guide for CFOs and finance teams implementing deferred revenue workflows in Zoho Books using journal entries.",
+      "body": "Deferred revenue — also called unearned revenue — represents payments received before goods or services are delivered. For SaaS companies, subscription prepayments, and service businesses with advance billing, getting this right in your accounting system is critical for accurate financial reporting. Why deferred revenue matters When a customer pays upfront for a 12-month subscription, you cannot recognize all of that revenue on day one. GAAP and IFRS require you to spread recognition over the service period. Mis-handling this leads to overstated revenue, audit findings, and poor cash flow forecasting. Setting up deferred revenue in Zoho Books Zoho Books doesn't always provide a one-click deferred revenue module for every scenario. In practice, finance teams use a combination of: 1. Prepayment invoices — Record the initial cash receipt against a liability account 2. Recurring journal entries — Recognize revenue monthly from deferred to earned 3. Custom accounts — Maintain separate deferred revenue GL accounts by product line Step-by-step journal workflow Each month, create a journal entry that debits your Deferred Revenue liability and credits your Revenue account for the earned portion. Automating this via API integration eliminates manual spreadsheet tracking and reduces close-time errors. When to integrate externally If you're building a SaaS product on top of Zoho Books, or managing deferred revenue across multiple entities, API-based automation ensures consistency. Satva Solutions helps teams implement these workflows with bi-directional sync and validation rules that match your revenue recognition policy.",
+      "type": "blog"
+    },
+    {
+      "id": "blog:essential-data-structures-algorithms",
+      "title": "How Does AI Categorization Actually Work?",
+      "url": "https://satvasolutions.com/blog/essential-data-structures-algorithms",
+      "path": "/blog/essential-data-structures-algorithms",
+      "summary": "A straightforward guide for CFOs, CPAs, and bookkeeping firms on how AI categorizes bank statement transactions in practice.",
+      "body": "Bank statement categorization is one of the most time-consuming tasks in bookkeeping. AI-powered categorization promises to eliminate hours of manual work — but how does it actually work under the hood? The problem with manual categorization Every month, bookkeepers download bank feeds, open hundreds of transactions, and assign each to the correct GL account — meals, utilities, travel, payroll, and dozens more. Rules-based systems help for recurring vendors, but edge cases pile up fast. How AI categorization works Modern AI categorization systems typically combine: - Pattern matching on vendor names, amounts, and transaction descriptions - Historical learning from your past categorization decisions - Confidence scoring so low-confidence items route to human review - Context from integrations — linking to invoices, bills, and receipts in your accounting system What finance leaders should expect AI won't replace your accountant, but it can handle 70–90% of routine transactions automatically. The key is integration: categorization works best when connected to QuickBooks, Xero, or your ERP so approved categories post directly without CSV exports. Building AI into your finance stack Satva Solutions implements AI categorization as part of broader automation projects — connecting bank feeds, document processing, and accounting platforms into a single workflow with audit trails and approval gates.",
+      "type": "blog"
+    },
+    {
+      "id": "blog:how-to-become-frontend-master",
+      "title": "How to Generate Cash Flow Reports from Xero When the API Doesn't Offer It (Yet)",
+      "url": "https://satvasolutions.com/blog/how-to-become-frontend-master",
+      "path": "/blog/how-to-become-frontend-master",
+      "summary": "A technical guide for developers building automated reporting engines and real-time financial dashboards on top of Xero.",
+      "body": "If you've tried to build an automated reporting engine or real-time financial dashboard on top of Xero, you've likely hit this wall: the API doesn't expose a native cash flow report endpoint the way the Xero UI does. Why this gap exists Xero's cash flow statement is derived from balance sheet movements, P&L data, and account classifications — not a single API resource. Developers need to reconstruct the logic programmatically. Approach 1: Derive from balance sheets Pull balance sheet reports at two points in time and calculate the delta across operating, investing, and financing categories. Map Xero account types to cash flow line items using a configuration layer. Approach 2: Transaction-level aggregation For more granular control, pull bank transactions, invoices, bills, and payments — then classify each into cash flow categories. This approach scales better for multi-entity reporting but requires robust data mapping. Approach 3: Hybrid with scheduled sync Most production systems use a hybrid: scheduled monthly sync for official reports, plus near-real-time transaction feeds for dashboard widgets. OAuth 2.0 authentication and rate-limit handling are essential. Getting it right in production Satva Solutions has built Xero integrations for forecasting platforms, SaaS dashboards, and multi-entity reporting tools. The key is accounting-aware data mapping — not just API calls, but understanding how finance teams actually use the numbers.",
+      "type": "blog"
+    },
+    {
+      "id": "blog:kitchensink",
+      "title": "Typography Example Post",
+      "url": "https://satvasolutions.com/blog/kitchensink",
+      "path": "/blog/kitchensink",
+      "summary": "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat",
+      "body": "import Button from \"@/components/ui/button.astro\"; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a name=\"Headings\"></a>Headings Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem. Ut laborum cillum laboris fugiat culpa sint irure do reprehenderit culpa occaecat. Exercitation esse mollit tempor magna aliqua in occaecat aliquip veniam reprehenderit nisi dolor in laboris dolore velit. Heading two Aute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim. Incididunt enim excepteur do veniam consequat culpa do voluptate dolor fugiat ad adipisicing sit. Labore officia est adipisicing dolore proident eiusmod exercitation deserunt ullamco anim do occaecat velit. Elit dolor consectetur proident sunt aliquip est do tempor quis aliqua culpa aute. Duis in tempor exercitation pariatur et adipisicing mollit irure tempor ut enim esse commodo laboris proident. Do excepteur laborum anim esse aliquip eu sit id Lorem incididunt elit irure ea nulla dolor et. Nulla amet fugiat qui minim deserunt enim eu cupidatat aute officia do velit ea reprehenderit. Heading three Voluptate cupidatat cillum elit quis ipsum eu voluptate fugiat consectetur enim. Quis ut voluptate culpa ex anim aute consectetur dolore proident voluptate exercitation eiusmod. Esse in do anim magna minim culpa sint. Adipisicing ipsum consectetur proident ullamco magna sit amet aliqua aute fugiat laborum exercitation duis et. Heading four Commodo fugiat aliqua minim quis pariatur mollit id tempor. Non occaecat minim esse enim aliqua adipisicing nostrud duis consequat eu adipisicing qui. Minim aliquip sit excepteur ipsum consequat laborum pariatur excepteur. Veniam fugiat et amet ad elit anim laborum duis mollit occaecat et et ipsum et reprehenderit. Occaecat aliquip dolore adipisicing sint labore occaecat officia fugiat. Quis adipisicing exercitation exercitation eu amet est laboris sunt nostrud ipsum reprehenderit ullamco. Enim sint ut consectetur id anim aute voluptate exercitation mollit dolore magna magna est Lorem. Ut adipisicing adipisicing aliqua ullamco voluptate labore nisi tempor esse magna incididunt. Heading five Veniam enim esse amet veniam deserunt laboris amet enim consequat. Minim nostrud deserunt cillum consectetur commodo eu enim nostrud ullamco occaecat excepteur. Aliquip et ut est commodo enim dolor amet sint excepteur. Amet ad laboris laborum deserunt sint sunt aliqua commodo ex duis deserunt enim est ex labore ut. Duis incididunt velit adipisicing non incididunt adipisicing adipisicing. Ad irure duis nisi tempor eu dolor fugiat magna et consequat tempor eu ex dolore. Mollit esse nisi qui culpa ut nisi ex proident culpa cupidatat cillum culpa occaecat anim. Ut officia sit ea nisi ea excepteur nostrud ipsum et nulla. Heading six Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [[Top]](#top) <a name=\"Paragraphs\"></a>Paragraphs Incididunt ex adipisicing ea ullamco consectetur in voluptate proident fugiat tempor deserunt reprehenderit ullamco id dolore laborum. Do laboris laboris minim incididunt qui consectetur exercitation adipisicing dolore et magna consequat magna anim sunt. Officia fugiat Lorem sunt pariatur incididunt Lorem reprehenderit proident irure. Dolore ipsum aliqua mollit ad officia fugiat sit eu aliquip cupidatat ipsum duis laborum laborum fugiat esse. Voluptate anim ex dolore deserunt ea ex eiusmod irure. Occaecat excepteur aliqua exercitation aliquip dolor esse eu eu. Officia dolore laborum aute incididunt commodo nisi velit est est elit et dolore elit exercitation. Enim aliquip magna id ipsum aliquip consectetur ad nulla quis. Incididunt pariatur dolor consectetur cillum enim velit cupidatat laborum quis ex. Officia irure in non voluptate adipisicing sit amet tempor duis dolore deserunt enim ut. Reprehenderit incididunt in ad anim et deserunt deserunt Lorem laborum quis. Enim aute anim labore proident laboris voluptate elit excepteur in. Ex labore nulla velit officia ullamco Lorem Lorem id do. Dolore ullamco ipsum magna dolor pariatur voluptate ipsum id occaecat ipsum. Dolore tempor quis duis commodo quis quis enim. [[Top]](#top) <a name=\"Blockquotes\"></a>Blockquotes Ad nisi laborum aute cupidatat magna deserunt eu id laboris id. Aliquip nulla cupidatat sint ex Lorem mollit laborum dolor amet est ut esse aute. Nostrud ex consequat id incididunt proident ipsum minim duis aliqua ut ex et ad quis. Laborum sint esse cillum anim nulla cillum consectetur aliqua sit. Nisi excepteur cillum labore amet excepteur commodo enim occaecat consequat ipsum proident exercitation duis id in. > Ipsum et cupidatat mollit exercitation enim duis sunt irure aliqua reprehenderit mollit. Pariatur Lorem pariatur laboris do culpa do elit irure. Eiusmod amet nulla voluptate velit culpa et aliqua ad reprehenderit sit ut. Labore ea magna Lorem consequat aliquip consectetur cillum duis dolore. Et veniam dolor qui incididunt minim amet laboris sit. Dolore ad esse commodo et dolore amet est velit ut nisi ea. Excepteur ea nulla commodo dolore anim dolore adipisicing eiusmod labore id enim esse quis mollit deserunt est. Minim ea culpa voluptate nostrud commodo proident in duis aliquip minim. > Qui est sit et reprehenderit aute est esse enim aliqua id aliquip ea anim. Pariatur sint reprehenderit mollit velit voluptate enim consectetur sint enim. Quis exercitation proident elit non id qui culpa dolore esse aliquip consequat. Ipsum excepteur cupidatat sunt minim ad eiusmod tempor sit. > Deserunt excepteur adipisicing culpa pariatur cillum laboris ullamco nisi fugiat cillum officia. In cupidatat nulla aliquip tempor ad Lorem Lorem quis voluptate officia consectetur pariatur ex in est duis. Mollit id esse est elit exercitation voluptate nostrud nisi laborum magna dolore dolore tempor in est consectetur. Adipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat veniam ullamco occaecat do ut. Tempor et esse reprehenderit veniam proident ipsum irure sit ullamco et labore ea excepteur nulla labore ut. Ex aute minim quis tempor in eu id id irure ea nostrud dolor esse. [[Top]](#top) <a name=\"Lists\"></a>Lists Ordered List 1. Longan 2. Lychee 3. Excepteur ad cupidatat do elit laborum amet cillum reprehenderit consequat quis. Deserunt officia esse aliquip consectetur duis ut labore laborum commodo aliquip aliquip velit pariatur dolore. 4. Marionberry 5. Melon - Cantaloupe - Honeydew - Watermelon 6. Miracle fruit 7. Mulberry Unordered List - Olive - Orange - Blood orange - Clementine - Papaya - Ut aute ipsum occaecat nisi culpa Lorem id occaecat cupidatat id id magna laboris ad duis. Fugiat cillum dolore veniam nostrud proident sint consectetur eiusmod irure adipisicing. - Passionfruit [[Top]](#top) <a name=\"Horizontal\"></a>Horizontal rule In dolore velit aliquip labore mollit minim tempor veniam eu veniam ad in sint aliquip mollit mollit. Ex occaecat non deserunt elit laborum sunt tempor sint consequat culpa culpa qui sit. Irure ad commodo eu voluptate mollit cillum cupidatat veniam proident amet minim reprehenderit. --- In laboris eiusmod reprehenderit aliquip sit proident occaecat. Non sit labore anim elit veniam Lorem minim commodo eiusmod irure do minim nisi. Dolor amet cillum excepteur consequat sint non sint. [[Top]](#top) <a name=\"Table\"></a>Table Duis sunt ut pariatur reprehenderit mollit mollit magna dolore in pariatur nulla commodo sit dolor ad fugiat. Laboris amet ea occaecat duis eu enim exercitation deserunt ea laborum occaecat reprehenderit. Et incididunt dolor commodo consequat mollit nisi proident non pariatur in et incididunt id. Eu ut et Lorem ea ex magna minim ipsum ipsum do. | Table Heading 1 | Table Heading 2 | Center align | Right align | Table Heading 5 | | :-------------- | :-------------- | :----------: | ----------: | :-------------- | | Item 1 | Item 2 | Item 3 | Item 4 | Item 5 | | Item 1 | Item 2 | Item 3 | Item 4 | Item 5 | | Item 1 | Item 2 | Item 3 | Item 4 | Item 5 | | Item 1 | Item 2 | Item 3 | Item 4 | Item 5 | | Item 1 | Item 2 | Item 3 | Item 4 | Item 5 | Minim id consequat adipisicing cupidatat laborum culpa veniam non consectetur et duis pariatur reprehenderit eu ex consectetur. Sunt nisi qui eiusmod ut cillum laborum Lorem officia aliquip laboris ullamco nostrud laboris non irure laboris. Cillum dolore labore Lorem deserunt mollit voluptate esse incididunt ex dolor. [[Top]](#top) <a name=\"Code\"></a>Code Inline code Ad amet irure est magna id mollit Lorem in do duis enim. Excepteur velit nisi magna ea pariatur pariatur ullamco fugiat deserunt sint non sint. Duis duis est velit velit aute culpa ex quis pariatur pariatur laborum aute pariatur duis tempor sunt ad. Irure magna voluptate dolore consectetur consectetur irure esse. Anim magna dolor eiusmod esse amet aute cupidatat aliqua do id voluptate cupidatat reprehenderit amet labore deserunt. Highlighted Et fugiat ad nisi amet magna labore do cillum fugiat occaecat cillum Lorem proident. In sint dolor ullamco ad do adipisicing amet id excepteur Lorem aliquip sit irure veniam laborum duis cillum. Aliqua occaecat minim cillum deserunt magna sunt laboris do do irure ea nostrud consequat ut voluptate ex. Ex amet id ex aliquip id do laborum excepteur exercitation elit sint commodo occaecat nostrud est. Nostrud pariatur esse veniam laborum non sint magna sit laboris minim in id. Aliqua pariatur pariatur excepteur adipisicing irure culpa consequat commodo et ex id ad. [[Top]](#top) <a name=\"Inline\"></a>Inline elements Sint ea anim ipsum ad commodo cupidatat do exercitation incididunt et minim ad labore sunt. Minim deserunt labore laboris velit nulla incididunt ipsum nulla. Ullamco ad laborum ea qui et anim in laboris exercitation tempor sit officia laborum reprehenderit culpa velit quis. Consequat commodo reprehenderit duis esse esse exercitation minim enim Lorem dolore duis irure. Nisi Lorem reprehenderit ea amet excepteur dolor excepteur magna labore proident voluptate ipsum. Reprehenderit ex esse deserunt aliqua ea officia mollit Lorem nulla magna enim. Et ad ipsum labore enim ipsum cupidatat consequat. Commodo non ea cupidatat magna deserunt dolore ipsum velit nulla elit veniam nulla eiusmod proident officia. Proident sit veniam in est proident officia adipisicing ea tempor cillum non cillum velit deserunt. Voluptate laborum incididunt sit consectetur Lorem irure incididunt voluptate nostrud. Commodo ut eiusmod tempor cupidatat esse enim minim ex anim consequat. Mollit sint culpa qui laboris quis consectetur ad sint esse. Amet anim anim minim ullamco et duis non irure. Sit tempor adipisicing ea laboris anim aute reprehenderit id eu ea. Aute Lorem minim adipisicing nostrud mollit ad ut voluptate do nulla esse occaecat aliqua sint anim. Incididunt in culpa cupidatat mollit cillum qui proident sit. In cillum aliquip incididunt voluptate magna amet cupidatat cillum pariatur sint aliqua est enim anim voluptate. Magna aliquip proident incididunt id duis pariatur eiusmod incididunt commodo culpa dolore sit. Culpa do nostrud elit ad exercitation anim pariatur non minim nisi adipisicing sunt officia. Do deserunt magna mollit Lorem commodo ipsum do cupidatat mollit enim ut elit veniam ea voluptate. Reprehenderit non eu quis in ad elit esse qui aute id dolore cillum. Esse laboris consequat dolor anim exercitation tempor aliqua deserunt velit magna laboris. Culpa culpa minim duis amet mollit do quis amet commodo nulla irure. [[Top]](#top) MDX <div> <Button>Click Me</Button> </div> [[Top]](#top)",
+      "type": "blog"
+    },
+    {
+      "id": "service:system-integration",
+      "title": "System Integration",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "API integration, B2B integration, and accounting integration across QuickBooks, HubSpot, Stripe, and NetSuite.",
+      "body": "API integration, B2B integration, and accounting integration across QuickBooks, HubSpot, Stripe, and NetSuite.",
+      "type": "service"
+    },
+    {
+      "id": "service:business-automation",
+      "title": "Business Automation",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "Automate repetitive tasks with RPA and streamline financial workflows across your business systems.",
+      "body": "Automate repetitive tasks with RPA and streamline financial workflows across your business systems.",
+      "type": "service"
+    },
+    {
+      "id": "service:financial-reporting",
+      "title": "Financial Reporting & Dashboards",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "CXO dashboards with real-time business performance data from accounting, ERP, CRM, and eCommerce.",
+      "body": "CXO dashboards with real-time business performance data from accounting, ERP, CRM, and eCommerce.",
+      "type": "service"
+    },
+    {
+      "id": "service:accounting-integration",
+      "title": "Multiple Accounting Integration",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "Integrate with QuickBooks, Xero, Zoho Books, and more with real-time bi-directional sync.",
+      "body": "Integrate with QuickBooks, Xero, Zoho Books, and more with real-time bi-directional sync.",
+      "type": "service"
+    },
+    {
+      "id": "service:erp-integration",
+      "title": "Multiple ERP Integration",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "Connect to SAP, NetSuite, Sage, and Dynamics 365 with ready-to-deploy cloud integrations.",
+      "body": "Connect to SAP, NetSuite, Sage, and Dynamics 365 with ready-to-deploy cloud integrations.",
+      "type": "service"
+    },
+    {
+      "id": "service:fintech-solutions",
+      "title": "FinTech Solutions",
+      "url": "https://satvasolutions.com/services",
+      "path": "/services",
+      "summary": "Purchasing, accounting, payroll, budgeting, and MIS dashboards for finance teams.",
+      "body": "Purchasing, accounting, payroll, budgeting, and MIS dashboards for finance teams.",
+      "type": "service"
+    },
+    {
+      "id": "faq:specialization",
+      "title": "What does Satva Solutions specialize in?",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "Satva Solutions specializes in accounting integrations, ERP integrations, finance automation, SaaS product development, reporting dashboards, and custom business system integrations.",
+      "body": "What does Satva Solutions specialize in? Satva Solutions specializes in accounting integrations, ERP integrations, finance automation, SaaS product development, reporting dashboards, and custom business system integrations.",
+      "type": "faq"
+    },
+    {
+      "id": "faq:platforms",
+      "title": "Which accounting and ERP systems can Satva Solutions integrate?",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "QuickBooks, Xero, MYOB, FreshBooks, Zoho Books, SAP, Oracle NetSuite, Sage, Microsoft Dynamics 365 Business Central, Odoo, and Acumatica.",
+      "body": "Which accounting and ERP systems can Satva Solutions integrate? QuickBooks, Xero, MYOB, FreshBooks, Zoho Books, SAP, Oracle NetSuite, Sage, Microsoft Dynamics 365 Business Central, Odoo, and Acumatica.",
+      "type": "faq"
+    },
+    {
+      "id": "faq:saas-integrations",
+      "title": "Can Satva Solutions help SaaS companies build accounting integrations?",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "Yes. We help SaaS companies build accounting and ERP integrations including API integration, authentication, data mapping, bi-directional sync, and marketplace launch support.",
+      "body": "Can Satva Solutions help SaaS companies build accounting integrations? Yes. We help SaaS companies build accounting and ERP integrations including API integration, authentication, data mapping, bi-directional sync, and marketplace launch support.",
+      "type": "faq"
+    },
+    {
+      "id": "faq:automation",
+      "title": "What business processes can Satva Solutions automate?",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "Invoice processing, AP, AR, bank reconciliation, order sync, inventory updates, payment matching, payroll journal posting, and financial reporting.",
+      "body": "What business processes can Satva Solutions automate? Invoice processing, AP, AR, bank reconciliation, order sync, inventory updates, payment matching, payroll journal posting, and financial reporting.",
+      "type": "faq"
+    },
+    {
+      "id": "faq:dashboards",
+      "title": "Does Satva Solutions build financial reporting dashboards?",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "Yes. Dashboards connecting accounting, ERP, CRM, payroll, eCommerce, and inventory systems with cash flow, revenue, and KPI views.",
+      "body": "Does Satva Solutions build financial reporting dashboards? Yes. Dashboards connecting accounting, ERP, CRM, payroll, eCommerce, and inventory systems with cash flow, revenue, and KPI views.",
+      "type": "faq"
+    },
+    {
+      "id": "faq:staff-augmentation",
+      "title": "Does Satva Solutions offer IT staff augmentation?",
+      "url": "https://satvasolutions.com/faq",
+      "path": "/faq",
+      "summary": "Yes. Developers, integration specialists, QA engineers, AI/ML engineers, and product engineers with finance-domain expertise.",
+      "body": "Does Satva Solutions offer IT staff augmentation? Yes. Developers, integration specialists, QA engineers, AI/ML engineers, and product engineers with finance-domain expertise.",
+      "type": "faq"
+    }
+  ]
+}

@@ -3,8 +3,17 @@ import { join } from "node:path";
 import { randomUUID } from "node:crypto";
 import { BookDemoInputSchema, type DemoRequest } from "../schemas/content.js";
 import { getProjectRoot } from "./paths.js";
-import { getContentIndex } from "./content-index.js";
 import { logger } from "./logger.js";
+
+const DEFAULT_CONTACT_EMAIL = "sales@satvasolutions.com";
+
+function getContactEmail(): string {
+  return (
+    process.env.MCP_DEMO_EMAIL_TO ??
+    process.env.MCP_CONTACT_EMAIL ??
+    DEFAULT_CONTACT_EMAIL
+  );
+}
 
 export interface BookDemoResult {
   success: boolean;
@@ -107,7 +116,6 @@ async function emailDemoRequest(
  */
 export async function bookDemo(input: unknown): Promise<BookDemoResult> {
   const parsed = BookDemoInputSchema.parse(input);
-  const { contact } = getContentIndex();
 
   const request: DemoRequest = {
     id: randomUUID(),
@@ -144,7 +152,7 @@ export async function bookDemo(input: unknown): Promise<BookDemoResult> {
     );
   }
 
-  const contactEmail = contact.email || "sales@satvasolutions.com";
+  const contactEmail = getContactEmail();
 
   return {
     success: true,

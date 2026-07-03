@@ -5,6 +5,12 @@ const moduleDir = dirname(fileURLToPath(import.meta.url));
 
 /** Project root directory (parent of /mcp). */
 export function getProjectRoot(): string {
+  if (process.env.MCP_PROJECT_ROOT) {
+    return process.env.MCP_PROJECT_ROOT;
+  }
+  if (process.env.VERCEL || process.env.LAMBDA_TASK_ROOT) {
+    return process.cwd();
+  }
   return join(moduleDir, "..", "..");
 }
 

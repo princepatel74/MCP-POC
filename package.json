@@ -15,6 +15,7 @@
     "mcp:inspect": "npx @modelcontextprotocol/inspector tsx mcp/server.ts",
     "mcp:test": "tsx mcp/test-smoke.ts",
     "mcp:test:demo": "tsx mcp/test-book-demo.ts",
+    "mcp:export": "tsx mcp/scripts/export-content-snapshot.ts",
     "mcp:http": "tsx mcp/server-http.ts",
     "mcp:http:build": "tsc -p mcp/tsconfig.json"
   },

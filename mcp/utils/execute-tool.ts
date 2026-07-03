@@ -1,3 +1,4 @@
+import { z } from "zod";
 import {
   SearchSiteInputSchema,
   ReadPageInputSchema,
@@ -31,6 +32,21 @@ export async function executeTool(
 ): Promise<unknown> {
   logger.info(`executeTool: ${name}`);
 
+  try {
+    return await runTool(name, input);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      const details = error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ");
+      throw new ToolExecutionError(`Invalid input: ${details}`, 400);
+    }
+    throw error;
+  }
+}
+
+async function runTool(
+  name: string,
+  input: Record<string, unknown>,
+): Promise<unknown> {
   switch (name) {
     case "search_site": {
       const { query, limit } = SearchSiteInputSchema.parse(input);
@@ -120,8 +136,7 @@ export async function executeTool(
     }
 
     case "book_demo": {
-      const parsed = BookDemoInputSchema.parse(input);
-      return bookDemo(parsed);
+      return bookDemo(input);
     }
 
     default:

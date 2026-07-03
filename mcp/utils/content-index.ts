@@ -39,6 +39,25 @@ import type {
 } from "../schemas/content.js";
 
 const CACHE_KEY = "content-index";
+const SNAPSHOT_RELATIVE = join("mcp", "data", "content-snapshot.json");
+
+function loadContentSnapshot(): ContentIndex | null {
+  const candidates = [
+    join(getProjectRoot(), SNAPSHOT_RELATIVE),
+    join(process.cwd(), SNAPSHOT_RELATIVE),
+  ];
+
+  for (const filePath of candidates) {
+    if (!existsSync(filePath)) continue;
+    try {
+      logger.info(`Loading MCP content snapshot: ${filePath}`);
+      return JSON.parse(readFileSync(filePath, "utf-8")) as ContentIndex;
+    } catch (error) {
+      logger.warn(`Failed to load content snapshot ${filePath}:`, error);
+    }
+  }
+  return null;
+}
 
 export interface ContentIndex {
   pages: PageContent[];
@@ -463,6 +482,12 @@ function buildContentIndex(): ContentIndex {
 
 /** Get the full content index, with caching that invalidates on file changes. */
 export function getContentIndex(): ContentIndex {
+  if (process.env.VERCEL || process.env.USE_MCP_SNAPSHOT === "true") {
+    const snapshot = loadContentSnapshot();
+    if (snapshot) return snapshot;
+    logger.warn("Content snapshot missing on Vercel — run npm run mcp:export during build");
+  }
+
   return getCached(CACHE_KEY, buildContentIndex, {
     watchPatterns: getContentWatchPatterns(),
     cwd: getProjectRoot(),

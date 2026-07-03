@@ -157,30 +157,29 @@ export const GetBlogPostInputSchema = z.object({
   slug: z.string().min(1).describe("Blog post slug"),
 });
 
+const emptyToUndefined = (value: unknown) =>
+  value === "" || value === null || value === undefined ? undefined : value;
+
 export const BookDemoInputSchema = z.object({
   name: z.string().min(2).max(100).describe("Full name of the person requesting the demo"),
   email: z.string().email().describe("Contact email address"),
-  phone: z
-    .string()
-    .min(7)
-    .max(30)
-    .optional()
-    .describe("Phone number (optional)"),
-  company: z
-    .string()
-    .max(150)
-    .optional()
-    .describe("Company or organization name (optional)"),
+  phone: z.preprocess(
+    emptyToUndefined,
+    z.string().min(7).max(30).optional(),
+  ).describe("Phone number (optional)"),
+  company: z.preprocess(
+    emptyToUndefined,
+    z.string().max(150).optional(),
+  ).describe("Company or organization name (optional)"),
   requirements: z
     .string()
-    .min(10)
+    .min(5)
     .max(5000)
     .describe("What they need help with — integrations, automation, services, etc."),
-  preferredDate: z
-    .string()
-    .max(100)
-    .optional()
-    .describe("Preferred date or time for the demo (optional)"),
+  preferredDate: z.preprocess(
+    emptyToUndefined,
+    z.string().max(100).optional(),
+  ).describe("Preferred date or time for the demo (optional)"),
 });
 
 export const DemoRequestSchema = z.object({

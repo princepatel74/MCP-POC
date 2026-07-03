@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build && npm run mcp:export",
   "outputDirectory": "dist",
   "framework": "astro",
   "installCommand": "npm install",
@@ -28,5 +28,10 @@
         { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/**/*.ts": {
+      "includeFiles": "mcp/data/content-snapshot.json"
+    }
+  }
 }
