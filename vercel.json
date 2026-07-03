@@ -5,9 +5,16 @@
   "installCommand": "npm install",
   "rewrites": [
     { "source": "/mcp", "destination": "/api/mcp" },
-    { "source": "/.well-known/mcp.json", "destination": "/api/well-known-mcp" }
+    { "source": "/.well-known/mcp.json", "destination": "/api/well-known-mcp" },
+    { "source": "/.well-known/webmcp.json", "destination": "/api/well-known-webmcp" }
   ],
   "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Permissions-Policy", "value": "tools=(self)" }
+      ]
+    },
     {
       "source": "/.well-known/mcp.json",
       "headers": [

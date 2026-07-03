@@ -1,0 +1,19 @@
+{
+  "name": "Satva Solutions WebMCP",
+  "description": "Browser WebMCP tools for accounting & ERP integration site",
+  "version": "1.0.0",
+  "api": "navigator.modelContext",
+  "bridge": "/api/webmcp",
+  "tools": [
+    "search_site",
+    "read_page",
+    "list_pages",
+    "get_faqs",
+    "contact_information",
+    "get_blog_post",
+    "list_blog_posts",
+    "get_services",
+    "get_pricing",
+    "book_demo"
+  ]
+}

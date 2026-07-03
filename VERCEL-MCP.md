@@ -1,6 +1,39 @@
 # MCP on the Same Site (Vercel)
 
-Your MCP server runs **on the same domain** as your Astro website — no separate Render deployment needed.
+Your site exposes **two** AI integration layers:
+
+| Type | Protocol | Who uses it |
+|------|----------|-------------|
+| **Server MCP** | Streamable HTTP at `/mcp` | Cursor, Claude Desktop, remote MCP clients |
+| **Browser WebMCP** | `navigator.modelContext` on the page | Chrome WebMCP extension, browser agents |
+
+---
+
+## Browser WebMCP (Chrome extension)
+
+The [WebMCP Model Context Tool Inspector](https://chromewebstore.google.com/detail/webmcp-model-context-tool/gbpdfapgefenggkahomfgkhfehlcenpd) detects tools registered **in the browser tab**, not the server `/mcp` endpoint.
+
+### Setup
+
+1. Enable Chrome flag: `chrome://flags/#enable-webmcp-testing` → **Enabled** → Relaunch
+2. Install the WebMCP extension (link above)
+3. Deploy site to Vercel (or run `npx vercel dev` — `npm run dev` alone does not serve `/api/webmcp`)
+4. Open your site in Chrome
+5. Open the extension — you should see **10 tools** (search_site, book_demo, etc.)
+
+### Verify in DevTools console
+
+```
+[WebMCP] Registered 10 tools for browser agents
+```
+
+### Tool execution
+
+Browser tools call `POST /api/webmcp` which runs the same logic as server MCP.
+
+---
+
+## Server MCP (Cursor / Claude)
 
 ## URLs (after Vercel deploy)
 
