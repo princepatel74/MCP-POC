@@ -26,7 +26,7 @@
       <div class="rounded-xl ai-glass-light p-3">
         <p class="text-[10px] text-slate-500 uppercase tracking-wide">Invoices</p>
         <p class="mt-1 text-2xl font-bold text-cyan-700 tabular-nums">1,284</p>
-        <p class="text-[10px] text-violet-600 mt-0.5">AI auto-matched</p>
+        <p class="text-[10px] text-brand-600 mt-0.5">AI auto-matched</p>
       </div>
     </div>
 
@@ -36,7 +36,7 @@
         {
           [35, 52, 44, 68, 58, 82, 74, 95].map((h, i) => (
             <div
-              class="flex-1 rounded-t bg-gradient-to-t from-brand-700 to-cyan-500 animate-bar-grow"
+              class="flex-1 rounded-t bg-gradient-to-t from-brand-700 to-brand-500 animate-bar-grow"
               style={`height: ${h}%; animation-delay: ${i * 0.08}s;`}
             />
           ))
@@ -72,20 +72,20 @@
 
     <svg class="absolute -right-2 top-1/2 -translate-y-1/2 w-16 h-32 opacity-50" viewBox="0 0 64 128" fill="none">
       <path d="M8 64 Q32 32 56 64" stroke="url(#syncGrad)" stroke-width="1.5" class="animate-sync-flow" />
-      <circle cx="32" cy="64" r="6" fill="#0891b2" class="animate-node-pulse" />
+      <circle cx="32" cy="64" r="6" fill="#00AEEF" class="animate-node-pulse" />
       <defs>
         <linearGradient id="syncGrad" x1="0" y1="0" x2="64" y2="128">
-          <stop stop-color="#0891b2" />
-          <stop offset="1" stop-color="#7c3aed" />
+          <stop stop-color="#00AEEF" />
+          <stop offset="1" stop-color="#0099D8" />
         </linearGradient>
       </defs>
     </svg>
   </div>
 
   <div class="absolute -bottom-4 -left-4 ai-glass rounded-xl px-3 py-2 text-xs text-slate-600 shadow-md animate-float-card" style="animation-delay: -2s;">
-    <span class="text-cyan-700 font-semibold">QuickBooks</span>
-    <span class="text-slate-400 mx-1">↔</span>
-    <span class="text-violet-700 font-semibold">NetSuite</span>
+    <span class="text-brand-600 font-semibold">QuickBooks</span>
+    <span class="text-satva-gray mx-1">↔</span>
+    <span class="text-brand-700 font-semibold">NetSuite</span>
   </div>
 
   <div class="absolute -top-3 -right-3 ai-glass rounded-lg px-2.5 py-1.5 text-[10px] font-medium text-emerald-700 shadow-md border border-emerald-100">

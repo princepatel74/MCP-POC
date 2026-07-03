@@ -1,8 +1,8 @@
 ---
 import Container from "@/components/container.astro";
 import Link from "@/components/ui/link.astro";
+import Logo from "@/components/Logo.astro";
 import Dropdown from "./dropdown.astro";
-import { company } from "@/data/site";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
@@ -30,15 +30,11 @@ const menuitems = [
 <Container>
   <header class="sticky top-0 z-50 my-4">
     <div
-      class="ai-glass ai-glow-border flex flex-col lg:flex-row justify-between items-center rounded-2xl px-4 py-3 lg:px-6">
+      class="ai-glass ai-glow-border flex flex-col lg:flex-row justify-between items-center rounded-sm px-4 py-3 lg:px-6">
       <Astronav>
         <div class="flex w-full lg:w-auto items-center justify-between">
-          <a href="/" class="flex items-center gap-2.5 text-lg group">
-            <span
-              class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-violet-600 text-sm font-bold text-white shadow-md shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition"
-              >S</span
-            >
-            <span class="font-bold text-brand-900">{company.name}</span>
+          <a href="/" class="flex items-center group">
+            <Logo height={36} class="group-hover:opacity-90 transition-opacity" />
           </a>
           <div class="block lg:hidden">
             <MenuIcon class="w-5 h-5 text-brand-900" />
@@ -60,7 +56,7 @@ const menuitems = [
                     <li>
                       <a
                         href={item.path}
-                        class="flex lg:px-3 py-2 items-center text-slate-600 hover:text-brand-700 font-medium transition">
+                        class="flex lg:px-3 py-2 items-center text-satva-gray-dark hover:text-brand-600 font-medium transition">
                         {item.title}
                       </a>
                     </li>
@@ -70,16 +66,16 @@ const menuitems = [
             }
           </ul>
           <div class="lg:hidden flex items-center mt-4">
-            <Link href="/contact" size="md" style="aura" block>Request a Demo</Link>
+            <Link href="/contact" size="md" style="primary" block>Request a Demo</Link>
           </div>
         </MenuItems>
       </Astronav>
-      <div class="hidden lg:flex items-center gap-3">
-        <span class="hidden xl:inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wider text-cyan-700">
-          <span class="h-1.5 w-1.5 rounded-full bg-cyan-500 animate-pulse"></span>
-          MCP-enabled site
+      <div class="hidden lg:flex items-center gap-4">
+        <span class="hidden xl:inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-widest text-brand-600">
+          <span class="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>
+          MCP-enabled
         </span>
-        <Link href="/contact" size="md" style="aura">Request a Demo</Link>
+        <Link href="/contact" size="md" style="primary">Request a Demo</Link>
       </div>
     </div>
   </header>

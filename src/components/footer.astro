@@ -2,64 +2,61 @@
 import { company, contact } from "@/data/site";
 import { integrationCategories } from "@/data/integrations";
 import Container from "@/components/container.astro";
+import Logo from "@/components/Logo.astro";
 ---
 
 <footer class="mt-24 border-t border-slate-200 bg-slate-50">
   <Container>
     <div class="grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4">
       <div>
-        <div class="flex items-center gap-2 mb-4">
-          <span
-            class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-violet-600 text-sm font-bold text-white"
-            >S</span
-          >
-          <span class="font-bold text-brand-900">{company.name}</span>
-        </div>
-        <p class="text-sm text-slate-600 leading-relaxed">
+        <a href="/" class="inline-block mb-4">
+          <Logo height={32} />
+        </a>
+        <p class="text-sm text-satva-gray-dark leading-relaxed">
           {company.description}
         </p>
       </div>
 
       <div>
-        <h3 class="font-semibold text-brand-900 mb-4">Solutions</h3>
-        <ul class="space-y-2 text-sm text-slate-600">
-          <li><a href="/solutions" class="hover:text-brand-700 transition">Accounting Automation</a></li>
+        <h3 class="font-semibold text-brand-900 mb-4 uppercase tracking-wider text-sm">Solutions</h3>
+        <ul class="space-y-2 text-sm text-satva-gray-dark">
+          <li><a href="/solutions" class="hover:text-brand-600 transition">Accounting Automation</a></li>
           <li><a href="/solutions" class="hover:text-brand-700 transition">Financial Reporting</a></li>
-          <li><a href="/solutions" class="hover:text-brand-700 transition">eCommerce Finance</a></li>
-          <li><a href="/solutions" class="hover:text-brand-700 transition">Connected Business Systems</a></li>
-          <li><a href="/case-studies" class="hover:text-brand-700 transition">Case Studies</a></li>
+          <li><a href="/solutions" class="hover:text-brand-600 transition">eCommerce Finance</a></li>
+          <li><a href="/solutions" class="hover:text-brand-600 transition">Connected Business Systems</a></li>
+          <li><a href="/case-studies" class="hover:text-brand-600 transition">Case Studies</a></li>
         </ul>
       </div>
 
       <div>
-        <h3 class="font-semibold text-brand-900 mb-4">Integrations</h3>
-        <ul class="space-y-2 text-sm text-slate-600">
+        <h3 class="font-semibold text-brand-900 mb-4 uppercase tracking-wider text-sm">Integrations</h3>
+        <ul class="space-y-2 text-sm text-satva-gray-dark">
           {
             integrationCategories.slice(0, 2).map((cat) => (
               <li>
-                <a href="/services" class="hover:text-brand-700 transition">{cat.title}</a>
+                <a href="/services" class="hover:text-brand-600 transition">{cat.title}</a>
               </li>
             ))
           }
-          <li><a href="/services" class="hover:text-brand-700 transition">eCommerce Integrations</a></li>
-          <li><a href="/services" class="hover:text-brand-700 transition">CRM Integrations</a></li>
+          <li><a href="/services" class="hover:text-brand-600 transition">eCommerce Integrations</a></li>
+          <li><a href="/services" class="hover:text-brand-600 transition">CRM Integrations</a></li>
         </ul>
       </div>
 
       <div>
-        <h3 class="font-semibold text-brand-900 mb-4">Contact</h3>
-        <ul class="space-y-2 text-sm text-slate-600">
+        <h3 class="font-semibold text-brand-900 mb-4 uppercase tracking-wider text-sm">Contact</h3>
+        <ul class="space-y-2 text-sm text-satva-gray-dark">
           <li>
-            <a href={contact.phoneHref} class="hover:text-brand-700 transition">{contact.phone}</a>
+            <a href={contact.phoneHref} class="hover:text-brand-600 transition">{contact.phone}</a>
           </li>
           <li>
-            <a href={`mailto:${contact.email}`} class="hover:text-brand-700 transition">{contact.email}</a>
+            <a href={`mailto:${contact.email}`} class="hover:text-brand-600 transition">{contact.email}</a>
           </li>
           {
             contact.locations.map((loc) => (
               <li class="pt-2">
-                <span class="font-medium text-slate-700">{loc.label}</span><br />
-                <span class="text-xs">{loc.address}</span>
+                <span class="font-medium text-brand-800">{loc.label}</span><br />
+                <span class="text-xs text-satva-gray">{loc.address}</span>
               </li>
             ))
           }
@@ -68,16 +65,16 @@ import Container from "@/components/container.astro";
     </div>
 
     <div
-      class="border-t border-slate-200 py-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-slate-500">
+      class="border-t border-slate-200 py-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-satva-gray">
       <p>
         Copyright © {new Date().getFullYear()} {company.legalName}. All Rights
         Reserved.
       </p>
       <div class="flex gap-4">
-        <a href="/faq" class="hover:text-brand-700 transition">FAQs</a>
-        <a href="/blog" class="hover:text-brand-700 transition">Blog</a>
-        <a href="/contact" class="hover:text-brand-700 transition">Contact</a>
-        <a href="/.well-known/mcp.json" class="hover:text-brand-700 transition">MCP</a>
+        <a href="/faq" class="hover:text-brand-600 transition">FAQs</a>
+        <a href="/blog" class="hover:text-brand-600 transition">Blog</a>
+        <a href="/contact" class="hover:text-brand-600 transition">Contact</a>
+        <a href="/.well-known/mcp.json" class="hover:text-brand-600 transition">MCP</a>
       </div>
     </div>
   </Container>

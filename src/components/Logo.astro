@@ -1,0 +1,18 @@
+---
+interface Props {
+  class?: string;
+  height?: number;
+}
+
+const { class: className = "", height = 40 } = Astro.props;
+---
+
+<img
+  src="/images/satva-logo.png"
+  alt="Satva Solutions"
+  width="240"
+  height="62"
+  class:list={["h-auto w-auto object-contain", className]}
+  style={`height: ${height}px; width: auto;`}
+  loading="eager"
+/>
