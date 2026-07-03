@@ -1,0 +1,22 @@
+{
+  "name": "Satva Solutions MCP",
+  "description": "Accounting & ERP integration website MCP server. Search pages, read content, book demos, get services and FAQs.",
+  "version": "1.0.0",
+  "transport": "streamable-http",
+  "endpoint": "/mcp",
+  "health": "/api/health",
+  "authentication": "none",
+  "tools": [
+    "search_site",
+    "read_page",
+    "list_pages",
+    "get_faqs",
+    "contact_information",
+    "get_blog_post",
+    "list_blog_posts",
+    "get_services",
+    "get_pricing",
+    "book_demo"
+  ],
+  "documentation": "https://modelcontextprotocol.io"
+}

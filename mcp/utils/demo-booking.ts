@@ -16,6 +16,9 @@ export interface BookDemoResult {
 }
 
 function getDemoRequestsDir(): string {
+  if (process.env.VERCEL) {
+    return join("/tmp", "mcp-demo-requests");
+  }
   return join(getProjectRoot(), "mcp", "data", "demo-requests");
 }
 

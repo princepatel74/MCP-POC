@@ -17,10 +17,11 @@ import { logger } from "./utils/logger.js";
 const PORT = Number(process.env.MCP_HTTP_PORT ?? process.env.PORT ?? "8080");
 const HOST = process.env.MCP_HTTP_HOST ?? "0.0.0.0";
 const API_KEY = process.env.MCP_API_KEY;
+const PUBLIC_ACCESS = process.env.MCP_PUBLIC === "true" || !API_KEY;
 
-if (!API_KEY || API_KEY.length < 16) {
+if (!PUBLIC_ACCESS && (!API_KEY || API_KEY.length < 16)) {
   logger.error(
-    "MCP_API_KEY is required (min 16 characters). Set it in your hosting provider environment variables.",
+    "MCP_API_KEY is required (min 16 characters) unless MCP_PUBLIC=true. Set MCP_PUBLIC=true for open access.",
   );
   process.exit(1);
 }
@@ -34,7 +35,7 @@ const app = createMcpExpressApp({
   allowedHosts,
 });
 
-const apiKeyAuth = createApiKeyAuth(API_KEY);
+const apiKeyAuth = createApiKeyAuth(API_KEY ?? "");
 
 // Public routes
 app.get("/health", (_req, res) => {

@@ -47,6 +47,10 @@ export function getSiteConfig(): SiteConfig {
     // Use defaults
   }
 
+  if (process.env.VERCEL_URL) {
+    siteUrl = `https://${process.env.VERCEL_URL}`.replace(/\/$/, "");
+  }
+
   return {
     siteUrl,
     siteName: companyName,
