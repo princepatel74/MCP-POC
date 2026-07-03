@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { WEBMCP_TOOL_DEFINITIONS } from "../mcp/utils/execute-tool";
+import { WEBMCP_TOOL_DEFINITIONS } from "../mcp/dist/utils/execute-tool.js";
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const host = req.headers.host ?? "localhost";

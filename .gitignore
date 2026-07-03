@@ -18,8 +18,8 @@ mcp-stderr.txt
 .env
 .env.production
 
-# MCP demo request logs (may contain PII)
-mcp/data/demo-requests/
+# MCP build output (compiled on Vercel during deploy)
+mcp/dist/
 
 # macOS-specific files
 .DS_Store

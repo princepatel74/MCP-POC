@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { getMcpManifest } from "../mcp/handlers/web-mcp-handler";
+import { getMcpManifest } from "../mcp/dist/handlers/web-mcp-handler.js";
 
 /** Dynamic MCP discovery manifest — also available via vercel rewrite at /.well-known/mcp.json */
 export default function handler(req: VercelRequest, res: VercelResponse) {

@@ -2,7 +2,7 @@
  * Export content index to JSON for Vercel serverless (no filesystem scan at runtime).
  * Run: npm run mcp:export
  */
-import { writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
 import { clearCache } from "../utils/cache.js";
 import { getContentIndex } from "../utils/content-index.js";
@@ -18,6 +18,10 @@ if (!existsSync(outDir)) {
 
 const outPath = join(outDir, "content-snapshot.json");
 writeFileSync(outPath, JSON.stringify(index, null, 2), "utf-8");
+
+const distDataDir = join(getProjectRoot(), "mcp", "dist", "data");
+mkdirSync(distDataDir, { recursive: true });
+copyFileSync(outPath, join(distDataDir, "content-snapshot.json"));
 
 console.log(`✓ Exported content snapshot: ${outPath}`);
 console.log(

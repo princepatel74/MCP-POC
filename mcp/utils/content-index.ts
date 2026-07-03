@@ -1,5 +1,6 @@
 import { readFileSync, existsSync } from "node:fs";
-import { join, basename } from "node:path";
+import { join, basename, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import fg from "fast-glob";
 import { getCached } from "./cache.js";
 import {
@@ -24,7 +25,6 @@ import {
   extractHeadings,
   stripMarkdown,
 } from "./markdown.js";
-import { createRequire } from "node:module";
 import { logger } from "./logger.js";
 import type {
   BlogPost,
@@ -41,15 +41,28 @@ import type {
 
 const CACHE_KEY = "content-index";
 const SNAPSHOT_RELATIVE = join("mcp", "data", "content-snapshot.json");
-const require = createRequire(import.meta.url);
 
 let bundledSnapshotCache: ContentIndex | null = null;
 
 function getBundledSnapshot(): ContentIndex {
-  if (!bundledSnapshotCache) {
-    bundledSnapshotCache = require("../data/content-snapshot.json") as ContentIndex;
+  if (bundledSnapshotCache) return bundledSnapshotCache;
+
+  const moduleDir = dirname(fileURLToPath(import.meta.url));
+  const candidates = [
+    join(moduleDir, "../data/content-snapshot.json"),
+    join(moduleDir, "../../data/content-snapshot.json"),
+    join(getProjectRoot(), "mcp", "data", "content-snapshot.json"),
+    join(getProjectRoot(), "mcp", "dist", "data", "content-snapshot.json"),
+  ];
+
+  for (const filePath of candidates) {
+    if (!existsSync(filePath)) continue;
+    bundledSnapshotCache = JSON.parse(readFileSync(filePath, "utf-8")) as ContentIndex;
+    logger.info(`Loaded bundled MCP snapshot: ${filePath}`);
+    return bundledSnapshotCache;
   }
-  return bundledSnapshotCache;
+
+  throw new Error("content-snapshot.json not found — run pnpm run mcp:export during build");
 }
 
 function loadContentSnapshot(): ContentIndex | null {

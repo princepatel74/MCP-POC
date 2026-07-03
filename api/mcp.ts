@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { handleMcpWebRequest, handleMcpOptions } from "../mcp/handlers/web-mcp-handler";
+import { handleMcpWebRequest, handleMcpOptions } from "../mcp/dist/handlers/web-mcp-handler.js";
 
 export const config = {
   runtime: "nodejs",

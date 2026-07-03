@@ -3,7 +3,7 @@ import {
   executeTool,
   ToolExecutionError,
   WEBMCP_TOOL_DEFINITIONS,
-} from "../mcp/utils/execute-tool";
+} from "../mcp/dist/utils/execute-tool.js";
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",

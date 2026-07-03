@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { bookDemo } from "../mcp/utils/demo-booking.js";
+import { bookDemo } from "../mcp/dist/utils/demo-booking.js";
 import { z } from "zod";
 
 const CORS = {
