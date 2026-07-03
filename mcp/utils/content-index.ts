@@ -24,6 +24,7 @@ import {
   extractHeadings,
   stripMarkdown,
 } from "./markdown.js";
+import { createRequire } from "node:module";
 import { logger } from "./logger.js";
 import type {
   BlogPost,
@@ -40,6 +41,16 @@ import type {
 
 const CACHE_KEY = "content-index";
 const SNAPSHOT_RELATIVE = join("mcp", "data", "content-snapshot.json");
+const require = createRequire(import.meta.url);
+
+let bundledSnapshotCache: ContentIndex | null = null;
+
+function getBundledSnapshot(): ContentIndex {
+  if (!bundledSnapshotCache) {
+    bundledSnapshotCache = require("../data/content-snapshot.json") as ContentIndex;
+  }
+  return bundledSnapshotCache;
+}
 
 function loadContentSnapshot(): ContentIndex | null {
   const candidates = [
@@ -483,9 +494,10 @@ function buildContentIndex(): ContentIndex {
 /** Get the full content index, with caching that invalidates on file changes. */
 export function getContentIndex(): ContentIndex {
   if (process.env.VERCEL || process.env.USE_MCP_SNAPSHOT === "true") {
-    const snapshot = loadContentSnapshot();
-    if (snapshot) return snapshot;
-    logger.warn("Content snapshot missing on Vercel — run npm run mcp:export during build");
+    const fromFile = loadContentSnapshot();
+    if (fromFile) return fromFile;
+    logger.info("Using bundled MCP content snapshot");
+    return getBundledSnapshot();
   }
 
   return getCached(CACHE_KEY, buildContentIndex, {

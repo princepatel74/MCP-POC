@@ -30,21 +30,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const body =
-    typeof req.body === "string" ? JSON.parse(req.body) : (req.body ?? {});
-  const { tool, input } = body as { tool?: string; input?: Record<string, unknown> };
-
-  if (!tool) {
-    return res.status(400).json({ error: "Missing tool name" });
-  }
-
   try {
+    const body =
+      typeof req.body === "string"
+        ? JSON.parse(req.body || "{}")
+        : (req.body ?? {});
+    const { tool, input } = body as { tool?: string; input?: Record<string, unknown> };
+
+    if (!tool) {
+      return res.status(400).json({ error: "Missing tool name" });
+    }
+
     const result = await executeTool(tool, input ?? {});
     return res.status(200).json(result);
   } catch (error) {
+    if (error instanceof SyntaxError) {
+      return res.status(400).json({ error: "Invalid JSON body" });
+    }
     if (error instanceof ToolExecutionError) {
       return res.status(error.status).json({ error: error.message });
     }
+    console.error("[webmcp]", error);
     return res.status(500).json({
       error: error instanceof Error ? error.message : "Tool execution failed",
     });

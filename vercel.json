@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm run build && npm run mcp:export",
+  "buildCommand": "pnpm run build && pnpm run mcp:export",
   "outputDirectory": "dist",
   "framework": "astro",
-  "installCommand": "npm install",
+  "installCommand": "pnpm install",
   "rewrites": [
     { "source": "/mcp", "destination": "/api/mcp" },
     { "source": "/.well-known/mcp.json", "destination": "/api/well-known-mcp" },
@@ -31,7 +31,7 @@
   ],
   "functions": {
     "api/**/*.ts": {
-      "includeFiles": "mcp/data/content-snapshot.json"
+      "includeFiles": "mcp/data/**"
     }
   }
 }
