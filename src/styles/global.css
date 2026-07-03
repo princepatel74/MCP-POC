@@ -41,6 +41,6 @@
   input:not([type="checkbox"]),
   textarea,
   select {
-    @apply bg-slate-900/80 border-slate-700 text-slate-100 placeholder:text-slate-500;
+    @apply bg-white border-slate-200 text-slate-800 placeholder:text-slate-400;
   }
 }

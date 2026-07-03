@@ -8,10 +8,10 @@ import AiBadge from "@/components/ai/AiBadge.astro";
 <div class="mt-20 md:mt-28">
   <div class="text-center max-w-3xl mx-auto">
     <AiBadge label="Intelligent Solutions" />
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-white mt-5">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-brand-900 mt-5">
       AI-driven accounting & ERP
     </h2>
-    <p class="text-lg mt-4 text-slate-400">
+    <p class="text-lg mt-4 text-slate-600">
       {company.experience} connecting finance systems with AI automation — from invoice
       matching to unified APIs across QuickBooks, Xero, NetSuite, and more.
     </p>
@@ -20,16 +20,15 @@ import AiBadge from "@/components/ai/AiBadge.astro";
 
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 mt-16 gap-6">
   {
-    features.map((item, i) => (
+    features.map((item) => (
       <div
-        class="ai-glass ai-glow-border group flex gap-4 items-start p-6 rounded-2xl hover:shadow-lg hover:shadow-cyan-500/10 transition duration-300"
-        style={`animation-delay: ${i * 0.05}s`}>
-        <div class="mt-1 bg-gradient-to-br from-cyan-500/20 to-violet-600/20 border border-cyan-400/20 rounded-xl p-2.5 w-11 h-11 shrink-0 group-hover:shadow-md group-hover:shadow-cyan-500/20 transition">
-          <Icon class="text-cyan-300 w-5 h-5" name={item.icon} />
+        class="cursor-tilt ai-glass ai-glow-border group flex gap-4 items-start p-6 rounded-2xl hover:shadow-lg hover:shadow-cyan-500/10 transition duration-300">
+        <div class="mt-1 bg-gradient-to-br from-cyan-50 to-violet-50 border border-cyan-100 rounded-xl p-2.5 w-11 h-11 shrink-0 group-hover:shadow-md group-hover:shadow-cyan-500/15 transition">
+          <Icon class="text-brand-700 w-5 h-5" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg text-white group-hover:text-cyan-200 transition">{item.title}</h3>
-          <p class="text-slate-400 mt-2 leading-relaxed text-sm">
+          <h3 class="font-semibold text-lg text-brand-900 group-hover:text-brand-700 transition">{item.title}</h3>
+          <p class="text-slate-600 mt-2 leading-relaxed text-sm">
             {item.description}
           </p>
         </div>

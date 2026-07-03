@@ -2,41 +2,41 @@
 /** Animated accounting + AI sync visual for hero */
 ---
 
-<div class="relative mx-auto w-full max-w-lg lg:max-w-none">
-  <div class="ai-glow-border relative overflow-hidden rounded-2xl ai-glass p-5 shadow-2xl shadow-cyan-500/10 animate-float-card">
-    <div class="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent ai-scan-line"></div>
+<div class="relative mx-auto w-full max-w-lg lg:max-w-none" data-cursor-parallax="10">
+  <div class="cursor-tilt ai-glow-border relative overflow-hidden rounded-2xl ai-glass p-5 shadow-xl shadow-blue-500/10 animate-float-card">
+    <div class="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent ai-scan-line"></div>
 
     <div class="mb-4 flex items-center justify-between">
       <div>
-        <p class="text-[10px] font-medium uppercase tracking-widest text-slate-400">Live sync</p>
-        <p class="text-sm font-semibold text-white">Accounting Intelligence</p>
+        <p class="text-[10px] font-medium uppercase tracking-widest text-slate-500">Live sync</p>
+        <p class="text-sm font-semibold text-brand-900">Accounting Intelligence</p>
       </div>
-      <span class="flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2.5 py-1 text-[10px] font-medium text-emerald-400">
-        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="flex items-center gap-1.5 rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-1 text-[10px] font-medium text-emerald-700">
+        <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
         Syncing
       </span>
     </div>
 
     <div class="grid grid-cols-2 gap-3 mb-4">
       <div class="rounded-xl ai-glass-light p-3">
-        <p class="text-[10px] text-slate-400 uppercase tracking-wide">Reconciled</p>
-        <p class="mt-1 text-2xl font-bold text-white animate-count-glow tabular-nums">$847K</p>
-        <p class="text-[10px] text-emerald-400 mt-0.5">↑ 12.4% this month</p>
+        <p class="text-[10px] text-slate-500 uppercase tracking-wide">Reconciled</p>
+        <p class="mt-1 text-2xl font-bold text-brand-800 animate-count-glow tabular-nums">$847K</p>
+        <p class="text-[10px] text-emerald-600 mt-0.5">↑ 12.4% this month</p>
       </div>
       <div class="rounded-xl ai-glass-light p-3">
-        <p class="text-[10px] text-slate-400 uppercase tracking-wide">Invoices</p>
-        <p class="mt-1 text-2xl font-bold text-cyan-300 tabular-nums">1,284</p>
-        <p class="text-[10px] text-violet-300 mt-0.5">AI auto-matched</p>
+        <p class="text-[10px] text-slate-500 uppercase tracking-wide">Invoices</p>
+        <p class="mt-1 text-2xl font-bold text-cyan-700 tabular-nums">1,284</p>
+        <p class="text-[10px] text-violet-600 mt-0.5">AI auto-matched</p>
       </div>
     </div>
 
     <div class="rounded-xl ai-glass-light p-3 mb-4">
-      <p class="text-[10px] text-slate-400 uppercase tracking-wide mb-2">Revenue trend</p>
+      <p class="text-[10px] text-slate-500 uppercase tracking-wide mb-2">Revenue trend</p>
       <div class="flex items-end gap-1.5 h-16">
         {
           [35, 52, 44, 68, 58, 82, 74, 95].map((h, i) => (
             <div
-              class="flex-1 rounded-t bg-gradient-to-t from-cyan-600/80 to-cyan-400/90 animate-bar-grow"
+              class="flex-1 rounded-t bg-gradient-to-t from-brand-700 to-cyan-500 animate-bar-grow"
               style={`height: ${h}%; animation-delay: ${i * 0.08}s;`}
             />
           ))
@@ -45,7 +45,7 @@
     </div>
 
     <div class="relative rounded-xl ai-glass-light p-3 overflow-hidden h-28">
-      <p class="text-[10px] text-slate-400 uppercase tracking-wide mb-2">Ledger entries</p>
+      <p class="text-[10px] text-slate-500 uppercase tracking-wide mb-2">Ledger entries</p>
       <div class="animate-ledger-scroll space-y-2">
         {
           [
@@ -61,7 +61,7 @@
             <div class="flex items-center justify-between text-[11px] font-mono">
               <span class="text-slate-500">{row.acct}</span>
               <span class="text-slate-400 truncate mx-2">{row.type}</span>
-              <span class:list={[row.amt.startsWith("+") ? "text-emerald-400" : "text-rose-400"]}>
+              <span class:list={[row.amt.startsWith("+") ? "text-emerald-600" : "text-rose-500"]}>
                 {row.amt}
               </span>
             </div>
@@ -70,25 +70,25 @@
       </div>
     </div>
 
-    <svg class="absolute -right-2 top-1/2 -translate-y-1/2 w-16 h-32 opacity-60" viewBox="0 0 64 128" fill="none">
+    <svg class="absolute -right-2 top-1/2 -translate-y-1/2 w-16 h-32 opacity-50" viewBox="0 0 64 128" fill="none">
       <path d="M8 64 Q32 32 56 64" stroke="url(#syncGrad)" stroke-width="1.5" class="animate-sync-flow" />
-      <circle cx="32" cy="64" r="6" fill="#22d3ee" class="animate-node-pulse" />
+      <circle cx="32" cy="64" r="6" fill="#0891b2" class="animate-node-pulse" />
       <defs>
         <linearGradient id="syncGrad" x1="0" y1="0" x2="64" y2="128">
-          <stop stop-color="#22d3ee" />
-          <stop offset="1" stop-color="#a78bfa" />
+          <stop stop-color="#0891b2" />
+          <stop offset="1" stop-color="#7c3aed" />
         </linearGradient>
       </defs>
     </svg>
   </div>
 
-  <div class="absolute -bottom-4 -left-4 ai-glass rounded-xl px-3 py-2 text-xs text-slate-300 shadow-lg animate-float-card" style="animation-delay: -2s;">
-    <span class="text-cyan-400 font-semibold">QuickBooks</span>
-    <span class="text-slate-500 mx-1">↔</span>
-    <span class="text-violet-300 font-semibold">NetSuite</span>
+  <div class="absolute -bottom-4 -left-4 ai-glass rounded-xl px-3 py-2 text-xs text-slate-600 shadow-md animate-float-card" style="animation-delay: -2s;">
+    <span class="text-cyan-700 font-semibold">QuickBooks</span>
+    <span class="text-slate-400 mx-1">↔</span>
+    <span class="text-violet-700 font-semibold">NetSuite</span>
   </div>
 
-  <div class="absolute -top-3 -right-3 ai-glass rounded-lg px-2.5 py-1.5 text-[10px] font-medium text-emerald-300 shadow-lg">
+  <div class="absolute -top-3 -right-3 ai-glass rounded-lg px-2.5 py-1.5 text-[10px] font-medium text-emerald-700 shadow-md border border-emerald-100">
     75% less manual entry
   </div>
 </div>

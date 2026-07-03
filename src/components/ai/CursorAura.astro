@@ -1,0 +1,64 @@
+<div id="cursor-spotlight" class="cursor-spotlight" aria-hidden="true"></div>
+
+<script>
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reducedMotion && !("ontouchstart" in window)) {
+    const root = document.documentElement;
+    let targetX = 0.5;
+    let targetY = 0.5;
+    let currentX = 0.5;
+    let currentY = 0.5;
+    let rafId = 0;
+
+    const lerp = (a, b, t) => a + (b - a) * t;
+
+    const bindTilt = () => {
+      document.querySelectorAll(".cursor-tilt").forEach((card) => {
+        if (card.dataset.tiltBound) return;
+        card.dataset.tiltBound = "1";
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale(1.02)`;
+        });
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
+    };
+
+    const tick = () => {
+      currentX = lerp(currentX, targetX, 0.08);
+      currentY = lerp(currentY, targetY, 0.08);
+
+      root.style.setProperty("--cursor-nx", String(currentX));
+      root.style.setProperty("--cursor-ny", String(currentY));
+      root.style.setProperty("--cursor-x", `${currentX * window.innerWidth}px`);
+      root.style.setProperty("--cursor-y", `${currentY * window.innerHeight}px`);
+
+      document.querySelectorAll("[data-cursor-parallax]").forEach((el) => {
+        const depth = parseFloat(el.dataset.cursorParallax || "12");
+        const dx = (currentX - 0.5) * depth;
+        const dy = (currentY - 0.5) * depth;
+        el.style.transform = `translate(${dx}px, ${dy}px)`;
+      });
+
+      rafId = requestAnimationFrame(tick);
+    };
+
+    window.addEventListener(
+      "mousemove",
+      (e) => {
+        targetX = e.clientX / window.innerWidth;
+        targetY = e.clientY / window.innerHeight;
+        root.style.setProperty("--cursor-x", `${e.clientX}px`);
+        root.style.setProperty("--cursor-y", `${e.clientY}px`);
+      },
+      { passive: true }
+    );
+
+    bindTilt();
+    rafId = requestAnimationFrame(tick);
+  }
+</script>
