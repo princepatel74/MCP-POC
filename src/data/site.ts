@@ -31,12 +31,12 @@ export const contact = {
 };
 
 export const hero = {
-  headline: "Accounting & Finance,",
-  headlineAccent: "Engineered.",
+  headline: "Finance workflows,",
+  headlineAccent: "powered by AI.",
   subtext:
-    "We pair deep finance and compliance expertise with engineering so every SaaS product, integration, automation, and AI solution we build delivers what finance teams actually need.",
+    "Satva connects QuickBooks, Xero, NetSuite, and 50+ accounting systems with intelligent automation — so finance teams reconcile faster, close books sooner, and let AI handle the repetitive work.",
   primaryCta: { label: "Request a Demo", href: "/contact" },
-  secondaryCta: { label: "See Our Accelerators", href: "/solutions" },
+  secondaryCta: { label: "Explore AI Accelerators", href: "/solutions" },
 };
 
 export const testimonial = {

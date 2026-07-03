@@ -2,64 +2,47 @@
 import Link from "@/components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 import { hero, company } from "@/data/site";
+import AiAuraBackground from "@/components/ai/AiAuraBackground.astro";
+import AiBadge from "@/components/ai/AiBadge.astro";
+import AccountingDashboard from "@/components/ai/AccountingDashboard.astro";
 ---
 
-<main class="relative overflow-hidden pt-12 pb-16 md:pt-16 md:pb-24">
-  <div
-    class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-50 via-white to-slate-50">
-  </div>
-  <div
-    class="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-brand-100/50 blur-3xl">
-  </div>
+<section class="relative overflow-hidden rounded-3xl ai-aura-bg px-6 py-14 md:px-10 md:py-20 lg:px-14">
+  <AiAuraBackground />
 
-  <div class="grid lg:grid-cols-2 gap-12 items-center">
+  <div class="relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
     <div>
-      <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider mb-4">
+      <AiBadge label="AI + Accounting Platform" />
+      <p class="text-cyan-300/80 font-medium text-sm mt-5 mb-3 tracking-wide">
         {company.tagline}
       </p>
-      <h1
-        class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-brand-900">
-        {hero.headline}<br />
-        <span class="text-brand-600">{hero.headlineAccent}</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-white leading-[1.08]">
+        {hero.headline}
+        <span class="ai-text-gradient block sm:inline"> {hero.headlineAccent}</span>
       </h1>
-      <p class="text-lg mt-6 text-slate-600 max-w-xl leading-relaxed">
+      <p class="text-lg mt-6 text-slate-300 max-w-xl leading-relaxed">
         {hero.subtext}
       </p>
       <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <Link href={hero.primaryCta.href} class="flex gap-2 items-center justify-center">
+        <Link
+          href={hero.primaryCta.href}
+          style="aura"
+          class="flex gap-2 items-center justify-center shadow-lg shadow-cyan-500/20">
           <Icon class="w-5 h-5" name="bx:bx-calendar" />
           {hero.primaryCta.label}
         </Link>
         <Link
           href={hero.secondaryCta.href}
-          size="lg"
-          style="outline"
+          style="aura-outline"
           class="flex gap-2 items-center justify-center">
           {hero.secondaryCta.label}
         </Link>
       </div>
-      <p class="mt-8 text-sm text-slate-500">
+      <p class="mt-8 text-sm text-slate-400">
         Trusted by {company.clients} · {company.certifications.join(" · ")}
       </p>
     </div>
 
-    <div class="hidden lg:grid grid-cols-2 gap-4">
-      <div class="rounded-2xl bg-white p-6 shadow-lg border border-slate-100">
-        <div class="text-4xl font-bold text-brand-700">75%</div>
-        <p class="text-sm text-slate-600 mt-2">Reduction in manual data entry</p>
-      </div>
-      <div class="rounded-2xl bg-brand-800 p-6 shadow-lg text-white mt-8">
-        <div class="text-4xl font-bold">50+</div>
-        <p class="text-sm text-brand-100 mt-2">ERP & accounting integrations</p>
-      </div>
-      <div class="rounded-2xl bg-white p-6 shadow-lg border border-slate-100">
-        <div class="text-4xl font-bold text-brand-700">15+</div>
-        <p class="text-sm text-slate-600 mt-2">Years finance domain expertise</p>
-      </div>
-      <div class="rounded-2xl bg-white p-6 shadow-lg border border-slate-100 mt-8">
-        <div class="text-4xl font-bold text-brand-700">6</div>
-        <p class="text-sm text-slate-600 mt-2">Countries served worldwide</p>
-      </div>
-    </div>
+    <AccountingDashboard />
   </div>
-</main>
+</section>

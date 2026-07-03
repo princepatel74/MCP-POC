@@ -2,6 +2,8 @@
 
 @plugin '@tailwindcss/typography';
 
+@import './ai-aura.css';
+
 @theme {
   --font-sans:
     Bricolage Grotesque Variable, Inter Variable, Inter, ui-sans-serif,
@@ -13,6 +15,10 @@
   --color-brand-700: #1d4ed8;
   --color-brand-800: #1e40af;
   --color-brand-900: #1e3a8a;
+  --color-aura-cyan: #22d3ee;
+  --color-aura-violet: #a78bfa;
+  --color-aura-slate: #0f172a;
+  --color-aura-deep: #0b1220;
 }
 
 /*
@@ -30,5 +36,11 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  input:not([type="checkbox"]),
+  textarea,
+  select {
+    @apply bg-slate-900/80 border-slate-700 text-slate-100 placeholder:text-slate-500;
   }
 }

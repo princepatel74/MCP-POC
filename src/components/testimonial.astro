@@ -2,15 +2,16 @@
 import { testimonial } from "@/data/site";
 ---
 
-<div class="mt-24 rounded-2xl bg-brand-900 text-white p-10 md:p-16">
-  <p class="text-brand-200 text-sm font-semibold uppercase tracking-wider mb-6">
+<div class="mt-24 relative overflow-hidden rounded-3xl ai-glass ai-glow-border p-10 md:p-16">
+  <div class="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 blur-[80px] rounded-full pointer-events-none"></div>
+  <p class="text-cyan-400 text-sm font-semibold uppercase tracking-wider mb-6 relative">
     A client's point of view
   </p>
-  <blockquote class="text-xl md:text-2xl leading-relaxed font-light">
+  <blockquote class="text-xl md:text-2xl leading-relaxed font-light text-slate-200 relative">
     "{testimonial.quote}"
   </blockquote>
-  <footer class="mt-8">
-    <p class="font-semibold">{testimonial.author}</p>
-    <p class="text-brand-200 text-sm mt-1">{testimonial.role}</p>
+  <footer class="mt-8 relative">
+    <p class="font-semibold text-white">{testimonial.author}</p>
+    <p class="text-slate-400 text-sm mt-1">{testimonial.role}</p>
   </footer>
 </div>
